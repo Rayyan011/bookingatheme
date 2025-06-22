@@ -6,8 +6,9 @@
             <!-- Widget 1 START -->
             <div class="col-lg-3">
                 <!-- logo -->
-                <a href="{{ route('root') }}">
-                    <img class="h-40px" src="/images/logo-light.svg" alt="logo">
+                <a class="navbar-brand" href="{{ route('root') }}">
+                    <img class="light-mode-item h-60px" src="/images/7.png" alt="logo">
+                    <img class="dark-mode-item h-60px" src="/images/1 (1).png" alt="logo">
                 </a>
                 <p class="my-3 text-body-secondary">Departure defective arranging rapturous did believe him all had
                     supported.</p>
@@ -38,7 +39,7 @@
 
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Link</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Journeys</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Sign up</a>
                             </li>
@@ -57,7 +58,7 @@
 
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Global Site</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Hotels</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">India</a>
                             </li>
@@ -74,7 +75,7 @@
 
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Booking</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Flights</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
                                         class="fa-solid fa-hotel me-2"></i>Hotel</a></li>
@@ -93,7 +94,7 @@
         </div><!-- Row END -->
 
         <!-- Tops Links -->
-        <div class="row mt-5">
+        <!-- <div class="row mt-5">
             <h5 class="mb-2 text-white">Top Links</h5>
             <ul class="list-inline text-primary-hover lh-lg">
                 <li class="list-inline-item"><a href="#" class="text-body-secondary">Flights</a></li>
@@ -118,7 +119,7 @@
                 <li class="list-inline-item"><a href="#" class="text-body-secondary">Opinion</a></li>
                 <li class="list-inline-item"><a href="#" class="text-body-secondary">Share Market</a></li>
             </ul>
-        </div>
+        </div> -->
 
         <!-- Payment and card -->
         <div class="row g-4 justify-content-between mt-0 mt-md-2">

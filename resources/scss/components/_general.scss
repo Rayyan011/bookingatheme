@@ -7,6 +7,138 @@
   background: var(--#{$prefix}mode) !important;
 }
 
+// Ovayo Custom
+.bg-ovayo-10{
+  background-color: $ovayo-light-10;
+}
+.bg-ovayo-30{
+  background-color: $ovayo-light-30;
+}
+.bg-ovayo-80{
+  background-color: $ovayo-light-80;
+}
+.bg-ovayo-100{
+  background-color: $ovayo-light-100;
+}
+// --- WHISPER VARIABLES ---
+$container-bg: $ovayo-light-10;       // Light grey background for the main container
+$container-padding: 2rem;
+
+$prompt-font-size: 1.25rem;
+$prompt-font-color: $black;   // Dark grey for the text
+
+$form-padding: 0.5rem;
+
+$grid-gap: 3rem;
+$image-gap: 1rem;
+$border-radius: 16px;
+$transition-base: all 0.3s ease-in-out; 
+// --- Component Styles ---
+
+.whisper-container {
+  background-color: $ovayo-light-10;
+  padding: $container-padding;
+  border-radius: $border-radius-lg;
+  max-width: 400px; // Set a max-width for better layout on larger screens
+  margin: 2rem auto; // Center the component on the page
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.whisper-prompt {
+  font-size: $prompt-font-size;
+  color: $prompt-font-color;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.whisper-form {
+  display: flex;
+  align-items: center;
+  background-color: $ovayo-light-30;
+  border-radius: $border-radius-2xl;
+  border: 1px solid $ovayo-light-100;
+  // padding: $form-padding;
+  transition: box-shadow 0.3s ease;
+}
+
+.whisper-input {
+  flex-grow: 1; // Allows the input to take up all available space
+  border: none;
+  background: transparent;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: $ovayo-dark-text;
+  outline: none; // Removes the default focus outline
+
+  &::placeholder {
+    color: #6c757d;
+  }
+}
+
+
+
+// SCSS for the "Discover Places" Section
+
+.discover-places {
+    background-color: $ovayo-light-10;
+    padding: 5rem 1rem;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $grid-gap;
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1.5fr;
+            align-items: center;
+        }
+    }
+
+    // --- LEFT COLUMN: TEXT CONTENT ---
+    .discover-text {
+    }
+    
+    // --- RIGHT COLUMN: CARD GRID LAYOUT ---
+    .card-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: $image-gap;
+    }
+
+    // --- CONTEXTUAL STYLES FOR CARDS WITHIN THIS SECTION ---
+    // These styles only apply to cards inside .discover-places
+    .card {
+        // Override Bootstrap's default border if necessary
+        border: none;
+        
+        // Ensure consistent border-radius
+        border-radius: $border-radius;
+
+        // Specific layout rule for the tall card in this grid
+        &.card-tall {
+            grid-row: 1 / 3;
+        }
+
+        // Child img styles for object-fit
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+  }
+
+
+
+
 // GLightbox theme color
 .plyr__control--overlaid, 
 .plyr--audio .plyr__control.plyr__tab-focus, 

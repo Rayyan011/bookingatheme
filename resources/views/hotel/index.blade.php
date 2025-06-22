@@ -5,283 +5,7 @@ class="has-navbar-mobile"
 @endsection
 
 @section('header')
-<!-- Header START -->
-<header class="navbar-light header-sticky">
-    
-    
-    <!-- Logo Nav START -->
-    <nav class="navbar navbar-expand-xl">
-        <div class="container">
-            <!-- Logo START -->
-            <a class="navbar-brand" href="{{ route('root') }}">
-                <img class="light-mode-item navbar-brand-item" src="/images/7.png" alt="logo">
-                <img class="dark-mode-item navbar-brand-item" src="/images/1 (1).png" alt="logo">
-            </a>
-            <!-- Logo END -->
-
-            <!-- Responsive navbar toggler -->
-            <button class="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-animation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-                <span class="d-none d-sm-inline-block small">Menu</span>
-            </button>
-
-            <!-- Responsive category toggler -->
-            <button class="navbar-toggler ms-sm-auto mx-3 me-md-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCategoryCollapse" aria-controls="navbarCategoryCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="bi bi-grid-3x3-gap-fill fa-fw"></i><span
-                    class="d-none d-sm-inline-block small">Category</span>
-            </button>
-
-            <!-- Main navbar START -->
-            <div class="navbar-collapse collapse" id="navbarCollapse">
-                <ul class="navbar-nav navbar-nav-scroll me-auto">
-
-                    <!-- Nav item Home -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('root') }}">Home</a>
-                    </li>
-
-                    <!-- Nav item About Us -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">About Us</a>
-                    </li>
-
-                    <!-- Nav item Why Ovayo -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="whyOvayoMenu" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Why Ovayo</a>
-                        <ul class="dropdown-menu" aria-labelledby="whyOvayoMenu">
-                            <li><a class="dropdown-item" href="{{ route('second', ['pages', 'sustainability']) }}">Sustainability</a></li>
-                        </ul>
-                    </li>
-
-
-                    <!-- Blog -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">Blog</a>
-                    </li>
-
-                    <!--  Contact us -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">Contact & Support</a>
-                    </li>
-
-                    <!-- Nav item Journeys -->
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="journeysMenu" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Journeys</a>
-                        <ul class="dropdown-menu" aria-labelledby="journeysMenu">
-                            <li><a class="dropdown-item" href="{{ route('root') }}">Hotels</a></li>
-                            <li><a class="dropdown-item" href="{{ route('second', ['flight', 'index-flight']) }}">Flights</a></li>
-                            <li><a class="dropdown-item" href="{{ route('second', ['tour', 'index-tour']) }}">Tours</a></li>
-                            <li><a class="dropdown-item" href="{{ route('second', ['cab', 'index-cab']) }}">Transportation</a></li>
-                            <li><a class="dropdown-item" href="{{ route('second', ['directory', 'index-directory']) }}">Directory</a></li>
-                        </ul>
-                    </li> -->
-
-                </ul>
-            </div>
-            <!-- Main navbar END -->
-
-            <!-- Nav category menu START -->
-            <div class="navbar-collapse collapse" id="navbarCategoryCollapse">
-                <ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
-                    <!-- Nav item Hotel -->
-                    <li class="nav-item"> 
-                        <a class="nav-link active" href="{{ route('root') }}">
-                            <i class="fa-solid fa-hotel me-2"></i>Hotel
-                        </a> 
-                    </li>
-
-                    <!-- Nav item Flight -->
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="{{ route('second', ['flight' , 'index-flight']) }}">
-                            <i class="fa-solid fa-plane me-2"></i>Flight
-                        </a> 
-                    </li>
-
-                    <!-- Nav item Tour -->
-                    <!-- <li class="nav-item"> 
-                        <a class="nav-link" href="{{ route('second', ['tour' , 'index-tour']) }}">
-                            <i class="fa-solid fa-globe-americas me-2"></i>Tour
-                        </a> 
-                    </li> -->
-
-                    <!-- Nav item Cabs -->
-                    <!-- <li class="nav-item"> 
-                        <a class="nav-link" href="{{ route('second', ['cab' , 'index-cab']) }}">
-                            <i class="fa-solid fa-car me-2"></i>Cab
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- Nav category menu END -->
-
-            <!-- Profile and Notification START -->
-            <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
-
-                <!-- Notification dropdown START -->
-                <li class="nav-item dropdown ms-0 ms-md-3">
-                    <!-- Notification button -->
-                    <a class="nav-notification btn btn-light p-0 mb-0" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                        <i class="bi bi-bell fa-fw"></i>
-                    </a>
-                    <!-- Notification dote -->
-                    <span class="notif-badge animation-blink"></span>
-
-                    <!-- Notification dropdown menu START -->
-                    <div
-                        class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md shadow-lg p-0">
-                        <div class="card bg-transparent">
-                            <!-- Card header -->
-                            <div
-                                class="card-header bg-transparent d-flex justify-content-between align-items-center border-bottom">
-                                <h6 class="m-0">Notifications <span
-                                        class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
-                                <a class="small" href="#">Clear all</a>
-                            </div>
-
-                            <!-- Card body START -->
-                            <div class="card-body p-0">
-                                <ul class="list-group list-group-flush list-unstyled p-2">
-                                    <!-- Notification item -->
-                                    <li>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action rounded notif-unread border-0 mb-1 p-3">
-                                            <h6 class="mb-2">New! Booking flights from New York ✈️</h6>
-                                            <p class="mb-0 small">Find the flexible ticket on flights around the world.
-                                                Start searching today</p>
-                                            <span>Wednesday</span>
-                                        </a>
-                                    </li>
-                                    <!-- Notification item -->
-                                    <li>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action rounded border-0 mb-1 p-3">
-                                            <h6 class="mb-2">Sunshine saving are here 🌞 save 30% or more on a stay
-                                            </h6>
-                                            <span>15 Nov 2022</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer -->
-                            <div class="card-footer bg-transparent text-center border-top">
-                                <a href="#" class="btn btn-sm btn-link mb-0 p-0">See all incoming activity</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Notification dropdown menu END -->
-                </li>
-                <!-- Notification dropdown END -->
-
-                <!-- Profile dropdown START -->
-                <li class="nav-item ms-3 dropdown">
-                    <!-- Avatar -->
-                    <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
-                        data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <img class="avatar-img rounded-2" src="/images/avatar/01.jpg" alt="avatar">
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
-                        aria-labelledby="profileDropdown">
-                        <!-- Profile info -->
-                        <li class="px-3 mb-3">
-                            <div class="d-flex align-items-center">
-                                <!-- Avatar -->
-                                <div class="avatar me-3">
-                                    <img class="avatar-img rounded-circle shadow" src="/images/avatar/01.jpg"
-                                        alt="avatar">
-                                </div>
-                                <div>
-                                    <a class="h6 mt-2 mt-sm-0" href="#">Lori Ferguson</a>
-                                    <p class="small m-0">example@gmail.com</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Links -->
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>My
-                                Bookings</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My
-                                Wishlist</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help
-                                Center</a></li>
-                        <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i
-                                    class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <!-- Dark mode options START -->
-                        <li>
-                            <div
-                                class="nav-pills-primary-soft theme-icon-active d-flex justify-content-between align-items-center p-2 pb-0">
-                                <span>Mode:</span>
-                                <button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
-                                    data-bs-theme-value="light" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-title="Light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                                        <use href="#"></use>
-                                    </svg>
-                                </button>
-                                <button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
-                                    data-bs-theme-value="dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-title="Dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-moon-stars fa-fw mode-switch"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                                        <path
-                                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
-                                        <use href="#"></use>
-                                    </svg>
-                                </button>
-                                <button type="button"
-                                    class="btn btn-link nav-link text-primary-hover mb-0 p-0 active"
-                                    data-bs-theme-value="auto" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-title="Auto">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-circle-half fa-fw mode-switch"
-                                        viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-                                        <use href="#"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </li>
-                        <!-- Dark mode options END-->
-                    </ul>
-                </li>
-                <!-- Profile dropdown END -->
-            </ul>
-            <!-- Profile and Notification START -->
-
-        </div>
-    </nav>
-    <!-- Logo Nav END -->
-</header>
-<!-- Header END -->
+@include('layouts.partials/navbar2')
 @endsection
 
 @section('content')
@@ -406,7 +130,7 @@ class="has-navbar-mobile"
                     <h6 class="d-none d-xl-block mb-3">Check Availability</h6>
 
                     <!-- Booking from START -->
-                    <form class="card shadow rounded-3 position-relative p-4 pe-md-5 pb-5 pb-md-4">
+                    <form class="card shadow rounded-3 position-relative p-4 pe-md-5 pb-5 pb-md-4 bg-ovayo-10">
                         <div class="row g-4 align-items-center">
                             <!-- Location -->
                             <div class="col-lg-4">
@@ -536,635 +260,163 @@ class="has-navbar-mobile"
     <!-- =======================
         Main Banner END -->
 
-    <!-- =======================
-        Best deal START -->
-    <section class="pb-2 pb-lg-5">
-        <div class="container">
-            <!-- Slider START -->
-            <div class="tiny-slider arrow-round arrow-blur arrow-hover">
-                <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-edge="2"
-                    data-dots="false" data-items-xl="3" data-items-lg="2" data-items-md="1">
-                    <!-- Slider item -->
-                    <div>
-                        <div class="card border rounded-3 overflow-hidden">
-                            <div class="row g-0 align-items-center">
-                                <!-- Image -->
-                                <div class="col-sm-6">
-                                    <img src="/images/offer/01.jpg" class="card-img rounded-0" alt="">
-                                </div>
 
-                                <!-- Title and content -->
-                                <div class="col-sm-6">
-                                    <div class="card-body px-3">
-                                        <h6 class="card-title"><a href="{{ route('second', ['listing' , 'offer-detail']) }}"
-                                                class="stretched-link">Daily 50 Lucky Winners get a Free Stay</a></h6>
-                                        <p class="mb-0">Valid till: 15 Nov</p>
-                                    </div>
-                                </div>
-                            </div>
+
+    <!-- <div class="tier-showcase-wrapper">
+        <div class="tier-showcase-container">
+            <h2>
+                Dive into three journeys: budget-friendly freedom, balanced boutique discovery, or transcendent ocean exclusivity.
+            </h2>
+
+            <div class="carousel-container">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-card">
+                            <h3>Lagoon Line</h3>
+                            <p>Paradise-priced adventures with freedom from financial anxiety</p>
                         </div>
-                    </div>
-
-                    <!-- Slider item -->
-                    <div>
-                        <div class="card border rounded-3 overflow-hidden">
-                            <div class="row g-0 align-items-center">
-                                <!-- Image -->
-                                <div class="col-sm-6">
-                                    <img src="/images/offer/04.jpg" class="card-img rounded-0" alt="">
-                                </div>
-
-                                <!-- Title and content -->
-                                <div class="col-sm-6">
-                                    <div class="card-body px-3">
-                                        <h6 class="card-title"><a href="{{ route('second', ['listing' , 'offer-detail']) }}" class="stretched-link">Up
-                                                to 60% OFF</a></h6>
-                                        <p class="mb-0">On Hotel Bookings Online</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-card">
+                            <h3>Mid-Range Drifter</h3>
+                            <p>Sweet-spot escapes blending boutique charm with unscripted exploration</p>
                         </div>
-                    </div>
-
-                    <!-- Slider item -->
-                    <div>
-                        <div class="card border rounded-3 overflow-hidden">
-                            <div class="row g-0 align-items-center">
-                                <!-- Image -->
-                                <div class="col-sm-6">
-                                    <img src="/images/offer/03.jpg" class="card-img rounded-0" alt="">
-                                </div>
-
-                                <!-- Title and content -->
-                                <div class="col-sm-6">
-                                    <div class="card-body px-3">
-                                        <h6 class="card-title"><a href="{{ route('second', ['listing' , 'offer-detail']) }}"
-                                                class="stretched-link">Book & Enjoy</a></h6>
-                                        <p class="mb-0">20% Off on the best available room rate</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-card">
+                            <h3>Ocean Crest</h3>
+                            <p>Sure-footed exclusivity, your unseen luxury made manifest</p>
                         </div>
-                    </div>
-
-                    <!-- Slider item -->
-                    <div>
-                        <div class="card border rounded-3 overflow-hidden">
-                            <div class="row g-0 align-items-center">
-                                <!-- Image -->
-                                <div class="col-sm-6">
-                                    <img src="/images/offer/02.jpg" class="card-img rounded-0" alt="">
-                                </div>
-
-                                <!-- Title and content -->
-                                <div class="col-sm-6">
-                                    <div class="card-body px-3">
-                                        <h6 class="card-title"><a href="{{ route('second', ['listing' , 'offer-detail']) }}" class="stretched-link">Hot
-                                                Summer Nights</a></h6>
-                                        <p class="mb-0">Up to 3 nights free!</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-card">
+                            <h3>Coral Cay</h3>
+                            <p>Vibrant reef-side living with a focus on sustainable, active discovery.</p>
+                        </div>
+                        <div class="carousel-card">
+                            <h3>Azure Haven</h3>
+                            <p>The pinnacle of private island luxury, where every detail is tailored to you.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Slider END -->
         </div>
-    </section>
-    <!-- =======================
-        Best deal END -->
+    </div> -->
 
-    <!-- =======================
-        About START -->
-    <section class="pb-0 pb-xl-5">
+
+        <!-- =======================
+        Why Choose Us START -->
+    <section class="pt-0 pt-xl-5">
         <div class="container">
-            <div class="row g-4 justify-content-between align-items-center">
-                <!-- Left side START -->
-                <div class="col-lg-5 position-relative">
-                    <!-- Svg Decoration -->
-                    <figure class="position-absolute top-0 start-0 translate-middle z-index-1 ms-4">
-                        <svg class="fill-warning" width="77px" height="77px">
-                            <path
-                                d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z" />
-                        </svg>
-                    </figure>
-
-                    <!-- Svg decoration -->
-                    <figure class="position-absolute bottom-0 end-0 d-none d-md-block mb-n5 me-n4">
-                        <svg height="400" class="fill-primary opacity-2" viewBox="0 0 340 340">
-                            <circle cx="194.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="338.2" r="2.2"></circle>
-                        </svg>
-                    </figure>
-
-                    <!-- Image -->
-                    <img src="/images/about/01.jpg" class="rounded-3 position-relative" alt="">
-
-                    <!-- Client rating START -->
-                    <div class="position-absolute bottom-0 start-0 z-index-1 mb-4 ms-5">
-                        <div class="bg-body d-flex d-inline-block rounded-3 position-relative p-3">
-
-                            <!-- Element -->
-                            <img src="/images/element/01.svg"
-                                class="position-absolute top-0 start-0 translate-middle w-40px" alt="">
-
-                            <!-- Avatar group -->
-                            <div class="me-4">
-                                <h6 class="fw-light">Client</h6>
-                                <!-- Avatar group -->
-                                <ul class="avatar-group mb-0">
-                                    <li class="avatar avatar-sm">
-                                        <img class="avatar-img rounded-circle" src="/images/avatar/01.jpg"
-                                            alt="avatar">
-                                    </li>
-                                    <li class="avatar avatar-sm">
-                                        <img class="avatar-img rounded-circle" src="/images/avatar/02.jpg"
-                                            alt="avatar">
-                                    </li>
-                                    <li class="avatar avatar-sm">
-                                        <img class="avatar-img rounded-circle" src="/images/avatar/03.jpg"
-                                            alt="avatar">
-                                    </li>
-                                    <li class="avatar avatar-sm">
-                                        <img class="avatar-img rounded-circle" src="/images/avatar/04.jpg"
-                                            alt="avatar">
-                                    </li>
-                                    <li class="avatar avatar-sm">
-                                        <div class="avatar-img rounded-circle bg-primary">
-                                            <span
-                                                class="text-white position-absolute top-50 start-50 translate-middle small">1K+</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Rating -->
-                            <div>
-                                <h6 class="fw-light mb-3">Rating</h6>
-                                <h6 class="m-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client rating END -->
-                </div>
-                <!-- Left side END -->
-
-                <!-- Right side START -->
-                <div class="col-lg-6">
-                    <h2 class="mb-3 mb-lg-5">The Best Holidays Start Here!</h2>
-                    <p class="mb-3 mb-lg-5">Book your hotel with us and don't forget to grab an awesome hotel deal to
-                        save massive on your stay.</p>
-
-                    <!-- Features START -->
-                    <div class="row g-4">
-                        <!-- Item -->
-                        <div class="col-sm-6">
-                            <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i
-                                    class="fa-solid fa-utensils"></i></div>
-                            <h5 class="mt-2">Quality Food</h5>
-                            <p class="mb-0">Departure defective arranging rapturous did. Conduct denied adding
-                                worthy little.</p>
-                        </div>
-                        <!-- Item -->
-                        <div class="col-sm-6">
-                            <div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i
-                                    class="bi bi-stopwatch-fill"></i></div>
-                            <h5 class="mt-2">Quick Services</h5>
-                            <p class="mb-0">Supposing so be resolving breakfast am or perfectly. </p>
-                        </div>
-                        <!-- Item -->
-                        <div class="col-sm-6">
-                            <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i
-                                    class="bi bi-shield-fill-check"></i></div>
-                            <h5 class="mt-2">High Security</h5>
-                            <p class="mb-0">Arranging rapturous did believe him all had supported. </p>
-                        </div>
-                        <!-- Item -->
-                        <div class="col-sm-6">
-                            <div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i
-                                    class="bi bi-lightning-fill"></i></div>
-                            <h5 class="mt-2">24 Hours Alert</h5>
-                            <p class="mb-0">Rapturous did believe him all had supported.</p>
-                        </div>
-                    </div>
-                    <!-- Features END -->
-
-                </div>
-                <!-- Right side END -->
-            </div>
-        </div>
-    </section>
-    <!-- =======================
-        About END -->
-
-    <!-- =======================
-        Featured Hotels START -->
-    <section>
-        <div class="container">
-
             <!-- Title -->
-            <div class="row mb-4">
+            <div class="row g-4 mb-3 mb-sm-4">
                 <div class="col-12 text-center">
-                    <h2 class="mb-0">Featured Hotels</h2>
+                    <h2>Choose your path - Freedom, Discovery, or Exclusivity.</h2>
                 </div>
             </div>
 
             <div class="row g-4">
-                <!-- Hotel item -->
-                <div class="col-sm-6 col-xl-3">
+                <!-- Category item -->
+                <div class="col-sm-6 col-lg-4">
                     <!-- Card START -->
-                    <div class="card card-img-scale overflow-hidden bg-transparent">
-                        <!-- Image and overlay -->
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/category/hotel/01.jpg" class="card-img" alt="hotel image">
-                            <!-- Badge -->
-                            <div class="position-absolute bottom-0 start-0 p-3">
-                                <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                        class="bi bi-geo-alt me-2"></i>New York</div>
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body px-2">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['hotel', 'detail']) }}"
-                                    class="stretched-link">Baga
-                                    Comfort</a></h5>
-                            <!-- Price and rating -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small>
-                                </h6>
-                                <h6 class="mb-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                            </div>
-                        </div>
+                    <div class="card card-body shadow p-4 h-100">
+                        <!-- Icon -->
+                        <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mb-4"><i
+                                class="bi bi-lightning-fill fs-5"></i></div>
+                        <h5>Lagoon Line</h5>
+                        <p class="mb-0">Happiness prosperous impression had conviction For every delay in they
+                            Extremity now. </p>
                     </div>
                     <!-- Card END -->
                 </div>
 
-                <!-- Hotel item -->
-                <div class="col-sm-6 col-xl-3">
+                <!-- Category item -->
+                <div class="col-sm-6 col-lg-4">
                     <!-- Card START -->
-                    <div class="card card-img-scale overflow-hidden bg-transparent">
-                        <!-- Image and overlay -->
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/category/hotel/02.jpg" class="card-img" alt="hotel image">
-                            <!-- Badge -->
-                            <div class="position-absolute bottom-0 start-0 p-3">
-                                <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                        class="bi bi-geo-alt me-2"></i>California</div>
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body px-2">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['hotel', 'detail']) }}"
-                                    class="stretched-link">New Apollo
-                                    Hotel</a></h5>
-                            <!-- Price and rating -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="text-success mb-0">$585 <small class="fw-light">/starting at</small>
-                                </h6>
-                                <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                            </div>
-                        </div>
+                    <div class="card card-body shadow p-4 h-100">
+                        <!-- Icon -->
+                        <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-4"><i
+                                class="fa-solid fa-leaf fs-5"></i></div>
+                        <h5>Mid-Range Drifter</h5>
+                        <p class="mb-0">Extremity now strangers contained breakfast him discourse additions
+                            Sincerity.</p>
                     </div>
                     <!-- Card END -->
                 </div>
 
-                <!-- Hotel item -->
-                <div class="col-sm-6 col-xl-3">
+                <!-- Category item -->
+                <div class="col-sm-6 col-lg-4">
                     <!-- Card START -->
-                    <div class="card card-img-scale overflow-hidden bg-transparent">
-                        <!-- Image and overlay -->
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/category/hotel/03.jpg" class="card-img" alt="hotel image">
-                            <!-- Badge -->
-                            <div class="position-absolute bottom-0 start-0 p-3">
-                                <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                        class="bi bi-geo-alt me-2"></i>Los Angeles</div>
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body px-2">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['hotel', 'detail']) }}"
-                                    class="stretched-link">New Age
-                                    Hotel</a></h5>
-                            <!-- Price and rating -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="text-success mb-0">$385 <small class="fw-light">/starting at</small>
-                                </h6>
-                                <h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                            </div>
-                        </div>
+                    <div class="card card-body shadow p-4 h-100">
+                        <!-- Icon -->
+                        <div class="icon-lg bg-warning bg-opacity-15 text-warning rounded-circle mb-4"><i
+                                class="bi bi-life-preserver fs-5"></i></div>
+                        <h5>Ocean Crest</h5>
+                        <p class="mb-0">Perpetual extremity now strangers contained breakfast him discourse
+                            additions.</p>
                     </div>
                     <!-- Card END -->
                 </div>
 
-                <!-- Hotel item -->
-                <div class="col-sm-6 col-xl-3">
-                    <!-- Card START -->
-                    <div class="card card-img-scale overflow-hidden bg-transparent">
-                        <!-- Image and overlay -->
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/category/hotel/04.jpg" class="card-img" alt="hotel image">
-                            <!-- Badge -->
-                            <div class="position-absolute bottom-0 start-0 p-3">
-                                <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                        class="bi bi-geo-alt me-2"></i>Chicago</div>
-                            </div>
-                        </div>
+            
 
-                        <!-- Card body -->
-                        <div class="card-body px-2">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['hotel', 'detail']) }}"
-                                    class="stretched-link">Helios Beach
-                                    Resort</a></h5>
-                            <!-- Price and rating -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="text-success mb-0">$665 <small class="fw-light">/starting at</small>
-                                </h6>
-                                <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card END -->
-                </div>
             </div> <!-- Row END -->
+
         </div>
     </section>
     <!-- =======================
-        Featured Hotels END -->
+        Why Choose Us END -->
 
-    <!-- =======================
-        Client START -->
-    <section class="py-0 py-md-5">
-        <div class="container">
-            <div class="row g-4 g-lg-7 justify-content-center align-items-center">
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/01.svg" class="grayscale" alt="">
+    <!-- <div class="whisper-container">
+        <h4>
+            Share your secret lagoon vibe - let your whisper guide us to your perfect Indian Ocean escape
+        </h4>
+
+        <form class="whisper-form">
+            <input type="text" class="whisper-input" placeholder="Describe your dream trip...">
+            <button type="submit" class="icon-lg btn btn-round btn-primary mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            </button>
+        </form>
+    </div> -->
+
+
+
+<section class="discover-places">
+    <div class="container">
+        <div class="discover-grid">
+            <!-- Left Column: Text Content -->
+            <div class="discover-text">
+                <h2>Discover the best places to visit</h2>
+                <p>Our curated selection of destinations offers unparalleled experiences, from the sun-kissed beaches of the Maldives to the rugged landscapes of Patagonia. Let us guide you to your next unforgettable adventure.</p>
+                <a href="#" class="btn btn-primary btn-lg btn-rounded">Explore places &rarr;</a>
+            </div>
+
+            <!-- Right Column: Card Grid -->
+            <div class="card-layout">
+                <!-- Tall Card (spans two rows) -->
+                <div class="card card-img-scale card-overlay-hover card-tall">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Man kayaking on a serene mountain lake">
                 </div>
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/02.svg" class="grayscale" alt="">
+                
+
+                <!-- Top Right Card -->
+                <div class="card card-img-scale card-overlay-hover">
+                    <img src="https://images.unsplash.com/photo-1517404215738-15263e9f9178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Man surfing a wave">
                 </div>
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/03.svg" class="grayscale" alt="">
+                
+
+                <!-- Bottom Right Card -->
+                <div class="card card-img-scale card-overlay-hover">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Woman on a swing overlooking a waterfall">
                 </div>
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/04.svg" class="grayscale" alt="">
-                </div>
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/05.svg" class="grayscale" alt="">
-                </div>
-                <!-- Image -->
-                <div class="col-5 col-sm-3 col-xl-2">
-                    <img src="/images/client/06.svg" class="grayscale" alt="">
-                </div>
+                
             </div>
         </div>
-    </section>
-    <!-- =======================
-        Client END -->
+    </div>
+</section>
+
 
     <!-- =======================
         Testimonials START -->
-    <section class="pb-0 py-md-5">
+    <section class="pb-0 py-md-5 bg-ovayo-10">
         <div class="container">
             <div class="row">
                 <!-- Slider START -->
@@ -1289,239 +541,102 @@ class="has-navbar-mobile"
     <!-- =======================
         Testimonials END -->
 
-    <!-- =======================
-        Near by START -->
-    <section>
-        <div class="container">
-            <!-- Title -->
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h2 class="mb-0">Explore Nearby</h2>
-                </div>
-            </div>
 
-            <div class="row g-4 g-md-5">
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/01.jpg" class="rounded-circle" alt="">
 
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">San Francisco</a></h5>
-                            <span>13 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/02.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Los Angeles</a></h5>
-                            <span>25 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/03.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Miami</a></h5>
-                            <span>45 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/04.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Sanjosh</a></h5>
-                            <span>55 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/05.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">New York</a></h5>
-                            <span>1-hour drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/06.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">North Justen</a></h5>
-                            <span>2-hour drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/07.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Rio</a></h5>
-                            <span>20 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/08.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Las Vegas</a></h5>
-                            <span>3-hour drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/09.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Texas</a></h5>
-                            <span>55 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/10.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Chicago</a></h5>
-                            <span>13 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/11.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">New Keagan</a></h5>
-                            <span>35 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-
-                <!-- Card item START -->
-                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                    <div class="card bg-transparent text-center p-1 h-100">
-                        <!-- Image -->
-                        <img src="/images/category/hotel/nearby/01.jpg" class="rounded-circle" alt="">
-
-                        <div class="card-body p-0 pt-3">
-                            <h5 class="card-title"><a href="#" class="stretched-link">Oslo</a></h5>
-                            <span>1 hour 13 min drive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card item END -->
-            </div> <!-- Row END -->
-        </div>
-    </section>
-    <!-- =======================
-        Near by END -->
+        
 
     <!-- =======================
-        Download app START -->
-    <section class="bg-light">
+        Action boxes START -->
+    <section class="pt-0 pt-lg-5 bg-ovayo-30">
         <div class="container">
             <div class="row g-4">
-
-                <!-- Help -->
-                <div class="col-md-6 col-xxl-4">
-                    <div class="bg-body d-flex rounded-3 h-100 p-4">
-                        <h3><i class="fa-solid fa-hand-holding-heart"></i></h3>
-                        <div class="ms-3">
-                            <h5>24x7 Help</h5>
-                            <p class="mb-0">If we fall short of your expectation in any way, let us know</p>
+                <!-- Action box item -->
+                <div class="col-md-6 position-relative overflow-hidden">
+                    <div class="bg-primary bg-opacity-10 rounded-3 h-100 p-4">
+                        <!-- Content -->
+                        <div class="d-flex">
+                            <!-- Icon -->
+                            <div class="icon-lg text-white bg-primary rounded-circle flex-shrink-0"><i
+                                    class="bi bi-headset"></i></div>
+                            <!-- Content -->
+                            <div class="ms-3">
+                                <h4 class="mb-1">Have questions?</h4>
+                                <p class="mb-3">Not finding the help you need?</p>
+                                <a href="{{ route('second', ['pages', 'contact-2']) }}"
+                                    class="btn btn-dark mb-0">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Trust -->
-                <div class="col-md-6 col-xxl-4">
-                    <div class="bg-body d-flex rounded-3 h-100 p-4">
-                        <h3><i class="fa-solid fa-hand-holding-usd"></i></h3>
-                        <div class="ms-3">
-                            <h5>Payment Trust</h5>
-                            <p class="mb-0">All refunds come with no questions asked guarantee</p>
+                <!-- Action box item -->
+                <div class="col-md-6 position-relative overflow-hidden">
+                    <div class="bg-secondary bg-opacity-10 rounded-3 h-100 p-4">
+                        <!-- Content -->
+                        <div class="d-flex">
+                            <!-- Icon -->
+                            <div class="icon-lg text-white bg-secondary rounded-circle flex-shrink-0"><i
+                                    class="fa-solid fa-ticket"></i></div>
+                            <!-- Content -->
+                            <div class="ms-3">
+                                <h4 class="mb-1">Book your stay.</h4>
+                                <p class="mb-3">Prosperous impression had conviction For every delay</p>
+                                <a href="#" class="btn btn-dark mb-0">Book Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Download app -->
-                <div class="col-lg-6 col-xl-5 col-xxl-3 ms-xxl-auto">
-                    <h5 class="mb-4">Download app</h5>
-                    <div class="row g-3">
-                        <!-- Google play store button -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                            <a href="#"> <img src="/images/element/google-play.svg" alt=""> </a>
-                        </div>
-                        <!-- App store button -->
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                            <a href="#"> <img src="/images/element/app-store.svg" alt=""> </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
     <!-- =======================
-        Download app END -->
+        Action boxes END -->
+
+
+
+
+
+    <!-- =======================
+        Client START -->
+    <section class="bg-ovayo-30">
+        <div class="container">
+            <div class="row">
+                <!-- Client logo START -->
+                <div class="col-12">
+                    <div class="rounded-3 p-5">
+                        <!-- Title -->
+                        <h5 class="text-center mb-4 mb-md-5">Trusted by</h5>
+
+                        <!-- Slider START -->
+                        <div class="tiny-slider arrow-round">
+                            <div class="tiny-slider-inner" data-arrow="false" data-autoplay="true" data-edge="2"
+                                data-dots="false" data-gutter="80" data-items-xl="5" data-items-lg="4"
+                                data-items-md="3" data-items-sm="2" data-items-xs="1">
+                                <!-- Slide item START -->
+                                <div class="item"><img src="/images/client/01.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/02.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/08.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/05.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/06.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/03.svg" alt=""> </div>
+                                <!-- Slide item END -->
+                            </div>
+                        </div>
+                        <!-- Slider END -->
+                    </div>
+                </div>
+                <!-- Client logo END -->
+            </div>
+        </div>
+    </section>
+    <!-- =======================
+        Client END -->
+
+
+
+
+
+
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
