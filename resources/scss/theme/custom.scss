@@ -1,0 +1,303 @@
+// VARIABLES
+.bg-ovayo-10{
+  background-color: $ovayo-light-10;
+}
+.bg-ovayo-30{
+  background-color: $ovayo-light-30;
+}
+.bg-ovayo-80{
+  background-color: $ovayo-light-80;
+}
+.bg-ovayo-100{
+  background-color: $ovayo-light-100;
+}
+
+
+// --- VARIABLES ---
+$container-bg: $ovayo-light-10;       // Light grey background for the main container
+$container-padding: 2rem;
+$prompt-font-size: 1.25rem;
+$prompt-font-color: $black;   // Dark grey for the text
+$form-padding: 0.5rem;
+$grid-gap: 3rem;
+$image-gap: 1rem;
+$border-radius: 16px;
+$transition-base: all 0.3s ease-in-out; 
+$box-shadow-ov: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+.whisper-container {
+  background-color: $ovayo-light-10;
+  padding: $container-padding;
+  border-radius: $border-radius-lg;
+  max-width: 400px; // Set a max-width for better layout on larger screens
+  margin: 2rem auto; // Center the component on the page
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.whisper-prompt {
+  font-size: $prompt-font-size;
+  color: $prompt-font-color;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.whisper-form {
+  display: flex;
+  align-items: center;
+  background-color: $ovayo-light-30;
+  border-radius: $border-radius-2xl;
+  border: 1px solid $ovayo-light-100;
+  // padding: $form-padding;
+  transition: box-shadow 0.3s ease;
+}
+
+.whisper-input {
+  flex-grow: 1; // Allows the input to take up all available space
+  border: none;
+  background: transparent;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: $ovayo-dark-text;
+  outline: none; // Removes the default focus outline
+
+  &::placeholder {
+    color: #6c757d;
+  }
+}
+
+
+
+// SCSS for the "Discover Places" Section
+.discover-places {
+    background-color: $ovayo-light-10;
+    padding: 5rem 1rem;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $grid-gap;
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1.5fr;
+            align-items: center;
+        }
+    }
+
+    // --- LEFT COLUMN: TEXT CONTENT ---
+    .discover-text {
+    }
+    
+    // --- RIGHT COLUMN: CARD GRID LAYOUT ---
+    .card-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: $image-gap;
+    }
+
+    // --- CONTEXTUAL STYLES FOR CARDS WITHIN THIS SECTION ---
+    .card {
+        border: none;
+        border-radius: $border-radius;
+
+        &.card-tall {
+            grid-row: 1 / 3;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+  }
+
+// SCSS for the "Why Ovayo" page.
+.why-ovayo-section {
+    // padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+
+    @include media-breakpoint-up(md) {
+        // padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: map-get($spacers, 5); // Use a standard spacer for the gap
+        align-items: center;
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: 1fr 1.5fr;
+        }
+    }
+
+    .about-image {
+        img {
+            width: 100%;
+            border-radius: $border-radius-xl; // Use your largest border-radius
+            box-shadow: $box-shadow;
+        }
+    }
+
+    .about-content {
+        border-radius: $border-radius-xl;
+        box-shadow: $box-shadow-ov;
+        // border: 2px solid $ovayo-atoll-teal;
+        padding: 1.25rem;
+        min-height: 100%;
+        
+        @include media-breakpoint-up(lg) {
+            padding-left: map-get($spacers, 5);
+        }
+
+        p {
+            color: $gray-600; // As per your $body-color
+            line-height: 1.6;
+        }
+    }
+}
+
+.core-values-section {
+    // padding-top: map-get($spacers, 5);
+    // padding-bottom: map-get($spacers, 5);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+
+    h2 {
+        margin-bottom: map-get($spacers, 6);
+    }
+
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: map-get($spacers, 5);
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: $grid-gutter-width;
+        }
+    }
+
+    .value-item {
+        padding: 1.25rem;
+        border-radius: $border-radius-2xl;
+        box-shadow: $box-shadow-sm;
+        // border: 2px solid $ovayo-atoll-teal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: map-get($spacers, 4);
+
+        svg {
+            width: 48px;
+            height: 48px;
+            stroke: $ovayo-dark-text;
+        }
+
+        p {
+            margin: 0;
+            color: $ovayo-dark-text;
+            font-weight: $font-weight-normal;
+            font-size: $font-size-base;
+        }
+    }
+}
+
+
+// SCSS for the "Meet the Wish Keepers" section.
+.team-section {
+    background-color: $body-bg; // Uses $ovayo-light-30
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+    text-align: center;
+    
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+    
+    .section-title {
+        margin-bottom: map-get($spacers, 6);
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $grid-gutter-width;
+        max-width: 250px; // Constrain width on mobile for a centered single column
+        margin: 0 auto;
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 360px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 100%;
+        }
+    }
+    
+    .team-card {
+        background-color: $ovayo-light-10; 
+        border-radius: $border-radius-lg;
+        // border: 2px solid $ovayo-atoll-teal;
+        box-shadow: $box-shadow-ov;
+        padding: map-get($spacers, 5) $card-spacer-x;
+    }
+    
+    .team-card-image {
+        width: 150px; 
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: map-get($spacers, 4);
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .team-card-name {
+        margin-bottom: map-get($spacers, 1);
+    }
+
+    .team-card-role {
+        color: $gray-600;
+        font-size: $font-size-base;
+        margin-bottom: map-get($spacers, 4);
+    }
+    
+    .btn-match {
+        @extend .btn; // Inherit base .btn properties
+        border: $border-width solid $ovayo-sunset-coral;
+        color: $white;
+        background-color: $ovayo-sunset-coral;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: $ovayo-sunset-coral;
+            border: $border-width solid $ovayo-sunset-coral;
+        }
+    }
+}

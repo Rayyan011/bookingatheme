@@ -55,5 +55,7 @@
 // Theme dark
 @import "dark-mode";
 
+@import "theme/custom.scss";
+
 // In this scss you can write your scss/css
 @import "user";
