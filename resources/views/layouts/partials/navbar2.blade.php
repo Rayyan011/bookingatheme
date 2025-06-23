@@ -41,10 +41,19 @@
                         <a class="nav-link active" href="{{ route('root') }}">Home</a>
                     </li>
 
-                    <!-- Nav item About Us -->
+                    <!-- Nav item Hotel -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'why-ovayo']) }}">About Us</a>
+                        <a class="nav-link" href="{{ route('second', ['pages', 'hotels']) }}">Hotels</a>
                     </li>
+
+                    <!-- Nav item Flight -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('second', ['pages', 'flights']) }}">Flights</a>
+                    </li>
+                    <!-- Nav item About Us -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="{{ route('second', ['pages', 'why-ovayo']) }}">Why Ovayo</a>
+                    </li> -->
 
                     <!-- Nav item Why Ovayo -->
                     <li class="nav-item dropdown">

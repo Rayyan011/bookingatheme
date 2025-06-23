@@ -142,12 +142,12 @@ $transition-base: all 0.3s ease-in-out;
 // --- 1. "Why Ovayo" Section ---
 .why-ovayo-section {
     // padding-top: map-get($spacers, 5);
-    // padding-bottom: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
 
-    // @include media-breakpoint-up(md) {
-    //     padding-top: map-get($spacers, 8);
-    //     padding-bottom: map-get($spacers, 8);
-    // }
+    @include media-breakpoint-up(md) {
+        // padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
     
     .container {
         // Uses the container widths defined in your variables.scss
@@ -159,7 +159,7 @@ $transition-base: all 0.3s ease-in-out;
         gap: map-get($spacers, 5); // Use a standard spacer for the gap
         align-items: center;
         @include media-breakpoint-up(lg) {
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
         }
     }
 
@@ -226,6 +226,8 @@ $transition-base: all 0.3s ease-in-out;
     }
 
     .value-item {
+        padding: 1.25rem;
+        border-radius: $border-radius-2xl;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -246,6 +248,96 @@ $transition-base: all 0.3s ease-in-out;
     }
 }
 
+
+// SCSS for the "Meet the Wish Keepers" section.
+// This file assumes your _variables.scss is imported globally.
+
+.team-section {
+    background-color: $body-bg; // Uses $ovayo-light-30
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+    text-align: center;
+    
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+    
+    .section-title {
+        // Inherits base h2 styles from your variables
+        margin-bottom: map-get($spacers, 6);
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $grid-gutter-width;
+        max-width: 250px; // Constrain width on mobile for a centered single column
+        margin: 0 auto;
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 360px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 100%;
+        }
+    }
+    
+    .team-card {
+        background-color: $ovayo-light-10; 
+        border-radius: $border-radius-lg;
+        border: 1px solid $ovayo-atoll-teal;
+        padding: map-get($spacers, 5) $card-spacer-x;
+    }
+    
+    .team-card-image {
+        // Using a fixed size for consistency
+        width: 150px; 
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: map-get($spacers, 4);
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .team-card-name {
+        // Using H3 styles but applying it to the element
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        color: $headings-color;
+        font-size: $h3-font-size;
+        margin-bottom: map-get($spacers, 1);
+    }
+
+    .team-card-role {
+        color: $gray-600;
+        font-size: $font-size-base;
+        margin-bottom: map-get($spacers, 4);
+    }
+    
+    // Custom button style for this section
+    .btn-match {
+        @extend .btn; // Inherit base .btn properties
+        border: $border-width solid $ovayo-sunset-coral;
+        color: $ovayo-sunset-coral;
+
+        &:hover {
+            background-color: $ovayo-sunset-coral;
+            color: $white;
+        }
+    }
+}
 
 
 // GLightbox theme color

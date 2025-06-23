@@ -63,7 +63,7 @@ class="has-navbar-mobile"
                 <!-- Image -->
                 <div class="col-lg-6 position-relative">
 
-                    <img src="/images/bg/06.jpg" class="rounded" alt="">
+                    <img src="/images/ovayo/Mar-Umi Exterior (4).jpg" class="rounded" alt="">
 
                     <!-- Svg decoration -->
                     <figure class="position-absolute end-0 bottom-0">
@@ -100,25 +100,6 @@ class="has-navbar-mobile"
                                 d="M155.5,91.5c-0.9-0.5-1.7-0.7-2.3-1.6c0.4-0.2,0.8-0.5,1.2-0.7c-1.2-0.4-2.1,0.7-3.1,0c0.6-1,1.8-1,2.5-1.7 c0.1-0.6-0.3-0.6-0.7-0.7c-0.7-0.2-0.9,0.9-1.6,0.5c-0.3-0.3-0.4-0.7-0.1-0.9c1.7-1,3-2.3,4.5-3.5c0.9-0.7,1.1-0.9,2.5-1.2 c-0.1,0.5-0.6,0.7-0.9,1.1c0.7,0.7,1.3,0.1,1.9-0.2c0.1,1.1,0.9,1.9,0.5,3.4C158.3,87.4,157.4,89.8,155.5,91.5" />
                         </svg>
                     </figure>
-
-                    <!-- Support guid -->
-                    <div class="position-absolute top-0 end-0 z-index-1 mt-n4">
-                        <div class="bg-blur border border-light rounded-3 text-center shadow-lg p-3">
-                            <!-- Title -->
-                            <i class="bi bi-headset text-danger fs-3"></i>
-                            <h5 class="text-dark mb-1">24 / 7</h5>
-                            <h6 class="text-dark fw-light small mb-0">Guide Supports</h6>
-                        </div>
-                    </div>
-
-                    <!-- Round image group -->
-                    <div
-                        class="vstack gap-5 align-items-center position-absolute top-0 start-0 d-none d-md-flex mt-4 ms-n3">
-                        <img class="icon-lg shadow-lg border border-3 border-white rounded-circle"
-                            src="/images/category/hotel/4by3/11.jpg" alt="avatar">
-                        <img class="icon-xl shadow-lg border border-3 border-white rounded-circle"
-                            src="/images/category/hotel/4by3/12.jpg" alt="avatar">
-                    </div>
                 </div>
             </div>
             <!-- Content and Image END -->
@@ -393,19 +374,19 @@ class="has-navbar-mobile"
             <div class="card-layout">
                 <!-- Tall Card (spans two rows) -->
                 <div class="card card-img-scale card-overlay-hover card-tall">
-                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Man kayaking on a serene mountain lake">
+                    <img src="/images/ovayo/ritz-carlton_diving.jpg" alt="Man kayaking on a serene mountain lake">
                 </div>
                 
 
                 <!-- Top Right Card -->
                 <div class="card card-img-scale card-overlay-hover">
-                    <img src="https://images.unsplash.com/photo-1517404215738-15263e9f9178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Man surfing a wave">
+                    <img src="/images/ovayo/ritz-carlton_recreation.jpg" alt="Man surfing a wave">
                 </div>
                 
 
                 <!-- Bottom Right Card -->
                 <div class="card card-img-scale card-overlay-hover">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Woman on a swing overlooking a waterfall">
+                    <img src="/images/ovayo/ritz-carlton_kayak.jpg" alt="Woman on a swing overlooking a waterfall">
                 </div>
                 
             </div>
@@ -429,12 +410,7 @@ class="has-navbar-mobile"
                                 <div class="row justify-content-between align-items-center">
 
                                     <div class="col-md-6 col-lg-5 position-relative">
-                                        <!-- Element -->
-                                        <div
-                                            class="position-absolute top-0 start-0 translate-middle z-index-9 mt-7 ms-4">
-                                            <img src="/images/element/02.svg" class="h-60px bg-orange rounded p-2"
-                                                alt="">
-                                        </div>
+                          
 
                                         <!-- Svg decoration -->
                                         <figure
@@ -484,12 +460,7 @@ class="has-navbar-mobile"
                                 <div class="row justify-content-between align-items-center">
 
                                     <div class="col-md-6 col-lg-5 position-relative">
-                                        <!-- Element -->
-                                        <div
-                                            class="position-absolute top-0 start-0 translate-middle mt-7 ms-4 z-index-9">
-                                            <img src="/images/element/03.svg" class="h-60px bg-orange p-2 rounded"
-                                                alt="">
-                                        </div>
+                          
 
                                         <!-- Svg decoration -->
                                         <figure
