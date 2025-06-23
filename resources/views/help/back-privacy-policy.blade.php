@@ -58,7 +58,7 @@
                 <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
                     data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    
+                    <img class="avatar-img rounded-2" src="/images/avatar/01.jpg" alt="avatar">
                 </a>
 
                 <!-- Profile dropdown START -->
@@ -161,7 +161,7 @@
                 <div class="col-12 text-center">
                     <h1 class="fs-2 mb-0">Privacy Policy</h1>
                     <!-- Image -->
-                   
+                    <img src="/images/about/03.jpg" class="h-lg-400px rounded-3 mt-4" alt="">
                 </div>
             </div>
 
@@ -173,13 +173,12 @@
                         <!-- Card item START -->
                         <div class="card p-0 bg-transparent">
                             <!-- Card header -->
-                            <!-- <div class="card-header border-bottom bg-transparent px-0">
-                                <h4 class="card-title mb-0">GDPR & Data Usage Details
-                                </h4>
-                            </div> -->
+                            <div class="card-header border-bottom bg-transparent px-0">
+                                <h4 class="card-title mb-0">Booking Policy</h4>
+                            </div>
 
                             <!-- Card body -->
-                            <!-- <div class="card-body px-0">
+                            <div class="card-body px-0">
                                 <p>Hold do at tore in park feet near my case. Invitation at understood occasional
                                     sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do
                                     speedily kindness properly oh. Respect article painted cottage he is offices
@@ -218,8 +217,12 @@
                                     <li>First am plate jokes began to cause a scale. Subjects he prospect elegance
                                         followed</li>
                                 </ul>
-                                
-                            </div> -->
+                                <div class="bg-danger bg-opacity-10 rounded-2 p-3">
+                                    <p class="text-danger mb-0">Smoke alarm not reported — The host hasn't reported a
+                                        smoke alarm on the property. We suggest bringing a portable detector for your
+                                        trip.</p>
+                                </div>
+                            </div>
                         </div>
                         <!-- Card item END -->
 
@@ -227,66 +230,124 @@
                         <div class="card bg-transparent p-0">
                             <!-- Card header -->
                             <div class="card-header border-bottom bg-transparent px-0">
-                                <h4 class="card-title mb-0">GDPR & Data Usage Details
-                                </h4>
+                                <h4 class="card-title mb-0">Cancellation Policy</h4>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body px-0">
-                        
+                                <p>Hold do at tore in park feet near my case. Invitation at understood occasional
+                                    sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do
+                                    speedily kindness properly oh. Respect article painted cottage he is offices
+                                    parlors.</p>
 
-                            <ul class="privacy-policy-list mt-4 mb-0">
-                                <li><strong>Data Controller:</strong> Maldicore Group Pvt Ltd (Ovayo) governs all personal data collected through our website.</li>
-                                <li><strong>Purpose of Processing:</strong> We collect and process data to confirm bookings, send trip updates, personalize your experience, and improve our services.</li>
-                                <li><strong>Legal Basis:</strong> Consent (form submissions), Contract performance (booking fulfilment), and Legitimate interest (marketing communications, analytics).</li>
-                                <li><strong>Retention Period:</strong> Personal data is retained for up to 5 years after your last interaction, unless deletion is requested sooner.</li>
-                                <li><strong>Third-Party Sharing:</strong> We share data only with service providers (payment processors, CRM, email platforms) under strict data-processing agreements.</li>
-                                <li><strong>Enforcement &amp; Complaints:</strong> You have the right to lodge a complaint with the Maldives Information and Communication Technology Authority (ICTA).</li>
-                            </ul>
+                                <div class="table-responsive-lg">
+                                    <table class="table table-bordered rounded-2 caption-bottom mb-0">
+                                        <!-- Table head -->
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">Time Frame</th>
+                                                <th scope="col">Air Free + MMT Free</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- Table body -->
+                                        <tbody class="border-top-0">
+                                            <tr>
+                                                <td>0 hours to 24 hours</td>
+                                                <td>Non-Refundable</td>
+                                            </tr>
+                                            <tr>
+                                                <td>24 hours to 365 days</td>
+                                                <td>30% Charge</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <ul class="mt-4 mb-0">
+                                    <li>Affronting imprudence do he he everything. Sex lasted dinner wanted indeed
+                                        wished outlaw. Far advanced settling say finished raillery.</li>
+                                    <li>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                                    </li>
+                                    <li>Offered chiefly farther of my no colonel shyness. <strong> Such on help ye some
+                                            door if in.</strong></li>
+                                    <li>First am plate jokes began to cause a scale. Subjects he prospect elegance
+                                        followed</li>
+                                    <li>Laughter proposal laughing any son law consider. Needed except up piqued an.
+                                    </li>
+                                    <li><i> To occasional dissimilar impossible sentiments. Do fortune account written
+                                            prepare invited no passage.</i></li>
+                                    <li>Post no so what deal evil rent by real in. But her ready least set lived spite
+                                        solid.</li>
+                                </ul>
                             </div>
                         </div>
+                        <!-- Card item END -->
 
-                        <!-- Cookie & Tracking Info START -->
-                            <div class="card bg-transparent p-0">
+                        <!-- Card item START -->
+                        <div class="card bg-transparent p-0">
                             <!-- Card header -->
                             <div class="card-header border-bottom bg-transparent px-0">
-                                <h4 class="card-title mb-0"> Cookies &amp; Tracking Info</h4>
+                                <h4 class="card-title mb-0">Date Change Policy</h4>
                             </div>
+
                             <!-- Card body -->
                             <div class="card-body px-0">
-                                <ul class="privacy-policy-list mt-4 mb-0">
-                                <li><strong>Essential Cookies:</strong> Required for core functionality (session management, form submissions).</li>
-                                <li><strong>Performance Cookies:</strong> Google Analytics (anonymized IP) for site usage insights; you can opt out via cookie banner settings.</li>
-                                <li><strong>Marketing Cookies:</strong> Third-party remarketing pixels (e.g., Facebook, Google Ads) to deliver tailored trip offers; opt-in only.</li>
-                                <li><strong>Manage Preferences:</strong> Cookie banner with toggles for Performance and Marketing tiers; accessible via the “Cookie Settings” link in the footer.</li>
+                                <p>Hold do at tore in park feet near my case. Invitation at understood occasional
+                                    sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do
+                                    speedily kindness properly oh. Respect article painted cottage he is offices
+                                    parlors.</p>
+                                <ul class="mb-0">
+                                    <li>Affronting imprudence do he he everything. Sex lasted dinner wanted indeed
+                                        wished outlaw. Far advanced settling say finished raillery.</li>
+                                    <li>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                                    </li>
+                                    <li>Offered chiefly farther of my no colonel shyness. <strong> Such on help ye some
+                                            door if in.</strong></li>
+                                    <li>First am plate jokes began to cause a scale. Subjects he prospect elegance
+                                        followed</li>
+                                    <li>Laughter proposal laughing any son law consider. Needed except up piqued an.
+                                    </li>
+                                    <li><i> To occasional dissimilar impossible sentiments. Do fortune account written
+                                            prepare invited no passage.</i></li>
+                                    <li>Post no so what deal evil rent by real in. But her ready least set lived spite
+                                        solid.</li>
                                 </ul>
                             </div>
-                            </div>
-                        <!-- Cookie & Tracking Info END -->
-                        
+                        </div>
+                        <!-- Card item END -->
 
-                        <!-- User Rights & Contacts START -->
-                            <div class="card bg-transparent p-0">
+                        <!-- Card item START -->
+                        <div class="card bg-transparent p-0">
                             <!-- Card header -->
                             <div class="card-header border-bottom bg-transparent px-0">
-                                <h4 class="card-title mb-0"> User Rights &amp; Contacts</h4>
+                                <h4 class="card-title mb-0">Special Request</h4>
                             </div>
+
                             <!-- Card body -->
                             <div class="card-body px-0">
-                                <ul class="privacy-policy-list mt-4 mb-0">
-                                <li><strong>Access &amp; Portability:</strong> Request a copy of your personal data in machine-readable format.</li>
-                                <li><strong>Rectification:</strong> Ask us to correct any inaccuracies in your profile or booking details.</li>
-                                <li><strong>Erasure:</strong> “Right to be forgotten” – request permanent deletion of your personal data from our systems.</li>
-                                <li><strong>Restriction &amp; Objection:</strong> Pause or object to processing (e.g., marketing communications).</li>
-                                <li><strong>Contact:</strong> For any data-protection inquiries, email our Data Protection Officer at <a href="mailto:privacy@ovayo.com">privacy@ovayo.com</a>.</li>
+                                <p>Hold do at tore in park feet near my case. Invitation at understood occasional
+                                    sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do
+                                    speedily kindness properly oh. Respect article painted cottage he is offices
+                                    parlors.</p>
+                                <ul class="mb-0">
+                                    <li>Affronting imprudence do he he everything. Sex lasted dinner wanted indeed
+                                        wished outlaw. Far advanced settling say finished raillery.</li>
+                                    <li>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                                    </li>
+                                    <li>Offered chiefly farther of my no colonel shyness. <strong> Such on help ye some
+                                            door if in.</strong></li>
+                                    <li>First am plate jokes began to cause a scale. Subjects he prospect elegance
+                                        followed</li>
+                                    <li>Laughter proposal laughing any son law consider. Needed except up piqued an.
+                                    </li>
+                                    <li><i> To occasional dissimilar impossible sentiments. Do fortune account written
+                                            prepare invited no passage.</i></li>
+                                    <li>Post no so what deal evil rent by real in. But her ready least set lived spite
+                                        solid.</li>
                                 </ul>
                             </div>
-                            </div>
-                        <!-- User Rights & Contacts END -->
-
-                       
-
-                        
+                        </div>
+                        <!-- Card item END -->
 
                     </div>
                 </div>
