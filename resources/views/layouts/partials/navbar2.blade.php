@@ -43,7 +43,7 @@
 
                     <!-- Nav item About Us -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">About Us</a>
+                        <a class="nav-link" href="{{ route('second', ['pages', 'why-ovayo']) }}">About Us</a>
                     </li>
 
                     <!-- Nav item Why Ovayo -->
