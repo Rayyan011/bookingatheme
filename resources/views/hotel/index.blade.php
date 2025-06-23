@@ -54,7 +54,7 @@ class="has-navbar-mobile"
                                 </div>
                             </div>
                             <div class="align-middle d-inline-block">
-                                <h6 class="fw-normal small mb-0">Watch our story</h6>
+                                <p class="fw-normal small mb-0">Watch our story</p>
                             </div>
                         </a>
                     </div>
@@ -361,7 +361,7 @@ class="has-navbar-mobile"
     <!-- =======================
         Why Choose Us END -->
 
-    <!-- <div class="whisper-container">
+    <div class="whisper-container">
         <h4>
             Share your secret lagoon vibe - let your whisper guide us to your perfect Indian Ocean escape
         </h4>
@@ -375,7 +375,7 @@ class="has-navbar-mobile"
             </svg>
             </button>
         </form>
-    </div> -->
+    </div>
 
 
 
