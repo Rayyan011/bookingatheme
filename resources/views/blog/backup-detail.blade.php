@@ -19,7 +19,37 @@
                     <img src="/images/blog/13.jpg" class="rounded-3" alt="">
                 </div>
                 <!-- Title and content -->
-               
+                <div class="col-11 col-lg-10 mx-auto position-relative mt-n5 mt-sm-n7 mt-md-n8">
+                    <div class="bg-mode shadow rounded-3 p-4">
+                        <!-- Badge -->
+                        <div class="badge text-bg-success mb-2">Hotel service</div>
+                        <!-- Title -->
+                        <h1 class="fs-3">Ten unconventional tips about startups that you can't learn from books</h1>
+                        <p class="mb-2">Passage its ten led hearted removal cordial. Preference any astonished
+                            unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do. </p>
+
+                        <!-- List -->
+                        <ul class="nav nav-divider align-items-center">
+                            <li class="nav-item">
+                                <div class="nav-link">
+                                    <div class="d-flex align-items-center">
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle" src="/images/avatar/09.jpg"
+                                                alt="avatar">
+                                        </div>
+                                        <!-- Info -->
+                                        <div class="ms-2">
+                                            <h6 class="mb-0"><a href="#">Lori Stevens</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">Nov 15, 2022</li>
+                            <li class="nav-item">5 min read</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -33,7 +63,7 @@
             <div class="row">
 
                 <div class="col-lg-10 mx-auto">
-                    <p>perceived voice
+                    <p><span class="dropcap text-primary bg-primary bg-opacity-10 rounded px-2">P</span>erceived voice
                         share led him to widen noisy young. At weddings believed laughing although the material does the
                         exercise of. Warrant private blushes removed an in equally totally if. Delivered dejection
                         necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly
@@ -57,7 +87,10 @@
                             <p class="mb-0 mt-3">A pleasure exertion if believed provided to. All led out world this
                                 music while asked. </p>
                         </div>
-                        
+                        <!-- Image -->
+                        <div class="col-md-6 col-lg-5">
+                            <img src="/images/blog/10.jpg" class="rounded" alt="">
+                        </div>
                     </div>
 
                     <p class="pb-0 pt-4">Warrant private blushes removed an in equally totally if. Delivered dejection
@@ -87,11 +120,68 @@
                     <p>As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has.
                         Margaret disposed.</p>
 
-                    
-                    
+                    <!-- Author info -->
+                    <div class="bg-mode border rounded p-4">
+                        <!-- Avatar and info -->
+                        <div class="d-flex">
+                            <!-- Avatar -->
+                            <a href="#">
+                                <div class="avatar avatar-lg me-2 me-md-4">
+                                    <img class="avatar-img rounded-circle" src="/images/avatar/09.jpg"
+                                        alt="avatar">
+                                </div>
+                            </a>
+                            <!-- Info -->
+                            <div>
+                                <h4 class="m-0"><a href="#">Lori Stevens</a></h4>
+                                <small>An editor at Booking</small>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <p class="my-3">Louis Ferguson has written about government, criminal justice, and the role
+                            of money in politics since 2015.Delivered dejection necessary objection do Mr prevailed. Mr
+                            feeling does chiefly cordial in do. Water timed folly right aware if oh truth.</p>
+
+                        <!-- Buttons -->
+                        <div class="d-flex align-items-center justify-content-between">
+                            <!-- Social icons -->
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 pe-2 fs-5" href="#"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-2 fs-5" href="#"><i class="bi bi-twitter"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-2 fs-5" href="#"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-primary mb-0">View Articles</a>
+                        </div>
+                    </div>
 
                     <!-- Review poll START -->
-                    
+                    <div
+                        class="bg-light rounded d-md-flex justify-content-between align-items-center text-center p-3 mt-4">
+                        <!-- Title -->
+                        <h6 class="mb-0">Was this article helpful?</h6>
+                        <small class="py-3 p-md-0 d-block">25 out of 78 found this helpful</small>
+                        <!-- Check buttons -->
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <!-- Yes button -->
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1">
+                            <label class="btn btn-outline-secondary btn-sm mb-0" for="btnradio1"><i
+                                    class="fa-regular fa-thumbs-up me-1"></i> Yes</label>
+                            <!-- No button -->
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+                            <label class="btn btn-outline-secondary btn-sm mb-0" for="btnradio2"> No <i
+                                    class="fa-regular fa-thumbs-down ms-1"></i></label>
+                        </div>
+                    </div>
                     <!-- Review poll END -->
 
                     <!-- Social links and tags -->
@@ -110,7 +200,7 @@
                         </div>
                         <!-- Popular tags -->
                         <div class="align-items-center">
-                            <h6 class="d-inline-block mb-2 me-4"> Tags:</h6>
+                            <h6 class="d-inline-block mb-2 me-4">Popular Tags:</h6>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0"
                                         href="#">blog</a> </li>
