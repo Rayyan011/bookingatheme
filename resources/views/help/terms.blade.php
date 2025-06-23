@@ -159,7 +159,7 @@
             <!-- Title -->
             <div class="row mb-4">
                 <div class="col-12 text-center">
-                    <h1 class="fs-2 mb-0">Privacy Policy</h1>
+                    <h1 class="fs-2 mb-0">Terms & Conditions </h1>
                     <!-- Image -->
                    
                 </div>
@@ -227,7 +227,7 @@
                         <div class="card bg-transparent p-0">
                             <!-- Card header -->
                             <div class="card-header border-bottom bg-transparent px-0">
-                                <h4 class="card-title mb-0">GDPR & Data Usage Details
+                                <h4 class="card-title mb-0">Booking & Cancellation Policies
                                 </h4>
                             </div>
 

@@ -24,21 +24,20 @@
                 <div class="row g-4">
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Page</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Directory</h5>
                         <ul class="nav flex-column text-primary-hover">
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">About us</a>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Why Ovayo</a>
                             </li>
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Contact
                                     us</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">News and
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">
                                     Blog</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Meet a
-                                    Team</a></li>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Sustainability</a></li>
                         </ul>
                     </div>
 
                     <!-- Link block -->
-                    <div class="col-6 col-md-3">
+                    <!-- <div class="col-6 col-md-3">
                         <h5 class="text-white mb-2 mb-md-4">Journeys</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Sign up</a>
@@ -54,10 +53,10 @@
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Support</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <!-- Link block -->
-                    <div class="col-6 col-md-3">
+                    <!-- <div class="col-6 col-md-3">
                         <h5 class="text-white mb-2 mb-md-4">Hotels</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">India</a>
@@ -71,20 +70,20 @@
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Malaysia</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Flights</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Journeys</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
                                         class="fa-solid fa-hotel me-2"></i>Hotel</a></li>
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
                                         class="fa-solid fa-plane me-2"></i>Flight</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
+                            <!-- <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
                                         class="fa-solid fa-globe-americas me-2"></i>Tour</a></li>
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="#"><i
-                                        class="fa-solid fa-car me-2"></i>Cabs</a></li>
+                                        class="fa-solid fa-car me-2"></i>Cabs</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -163,8 +162,8 @@
             <div class="container">
                 <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
                     <!-- copyright text -->
-                    <div class="text-body-secondary text-primary-hover"> Copyrights ©2024 Booking. Build by <a
-                            href="https://stackbros.in/" class="text-body-secondary">Stackbros</a>. </div>
+                    <div class="text-body-secondary text-primary-hover"> Copyrights ©2025 Booking. Build by <a
+                           >Ovayo</a>. </div>
                     <!-- copyright links-->
                     <div class="nav mt-2 mt-lg-0">
                         <ul class="list-inline text-primary-hover mx-auto mb-0">
@@ -172,8 +171,8 @@
                                     href="#">Privacy policy</a></li>
                             <li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1"
                                     href="#">Terms and conditions</a></li>
-                            <li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1 pe-0"
-                                    href="#">Refund policy</a></li>
+                            <!-- <li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1 pe-0"
+                                    href="#">Refund policy</a></li> -->
                         </ul>
                     </div>
                 </div>

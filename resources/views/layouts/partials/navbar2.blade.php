@@ -63,7 +63,7 @@
 
                     <!--  Contact us -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">Contact & Support</a>
+                        <a class="nav-link" href="{{ route('second', ['pages', 'contact-2']) }}">Contact & Support</a>
                     </li>
 
                     <!-- Nav item Journeys -->
