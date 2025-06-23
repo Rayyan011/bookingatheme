@@ -10,7 +10,8 @@
 
     <!-- =======================
         Main banner START -->
-    <section>
+    <section class="position-relative py-8 py-lg-9"
+        style="background-image:url(/images/bg/20.jpg); background-position: center left; background-size: cover;">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-xl-10 mx-auto text-center">
