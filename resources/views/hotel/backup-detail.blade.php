@@ -1,11 +1,445 @@
 @extends('layouts.base')
 
-@section('body-attributes')
-class="has-navbar-mobile"
-@endsection
-
 @section('header')
-@include('layouts.partials/navbar2')
+<!-- Header START -->
+<header class="navbar-light header-sticky">
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo START -->
+            <a class="navbar-brand" href="{{ route('root') }}">
+                <img class="light-mode-item navbar-brand-item" src="/images/logo.svg" alt="logo">
+                <img class="dark-mode-item navbar-brand-item" src="/images/logo-light.svg" alt="logo">
+            </a>
+            <!-- Logo END -->
+
+            <!-- Responsive navbar toggler -->
+            <button class="navbar-toggler ms-auto mx-3 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <!-- Main navbar START -->
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                    <!-- Nav item Listing -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Listings</a>
+                        <ul class="dropdown-menu" aria-labelledby="listingMenu">
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('root') }}">Hotel Home</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="{{ route('second', ['hotel', 'index-chain']) }}">Hotel Chain</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="{{ route('second', ['hotel', 'index-resort']) }}">Hotel Resort</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hotel', 'grid']) }}">Hotel
+                                            Grid</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hotel', 'list']) }}">Hotel
+                                            List</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="{{ route('second', ['hotel', 'detail']) }}">Hotel Detail</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="{{ route('second', ['hotel', 'room-detail']) }}">Room Detail</a></li>
+                                    <li> <a class="dropdown-item"
+                                            href="{{ route('second', ['hotel', 'booking']) }}">Hotel Booking</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Flight</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['flight' , 'index-flight']) }}">Flight Home</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['flight' , 'list']) }}">Flight List</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['flight' , 'detail']) }}">Flight Detail</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['flight' , 'booking']) }}">Flight Booking</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Tour</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['tour' , 'index-tour']) }}">Tour Home</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['tour' , 'grid']) }}">Tour Grid</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['tour' , 'detail']) }}">Tour Detail</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['tour' , 'booking']) }}">Tour Booking</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Cab</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['cab' , 'index-cab']) }}">Cab Home</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['cab' , 'list']) }}">Cab List</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['cab' , 'detail']) }}">Cab Detail</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['cab' , 'booking']) }}">Cab Booking</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Directory</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['directory' , 'index-directory']) }}">Directory Home</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['directory' , 'detail']) }}">Directory Detail</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'join-us']) }}">Join us</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'add-listing']) }}">Add Listing</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'add-listing-minimal']) }}">Add Listing
+                                            Minimal</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'listing-added']) }}">Listing Added</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Hero</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hero', 'inline-form']) }}">Hero Inline
+                                            Form</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hero', 'multiple-search']) }}">Hero Multiple
+                                            Search</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hero' , 'image-gallery']) }}">Hero Image
+                                            Gallery</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['hero', 'split']) }}">Hero Split</a></li>
+                                </ul>
+                            </li>
+
+                            <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'booking-confirm']) }}">Booking Confirmed</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'compare-listing']) }}">Compare Listing</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['listing' , 'offer-detail']) }}">Offer Detail</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Nav item Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'about']) }}">About</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'contact']) }}">Contact</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'contact-2']) }}">Contact 2</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'team']) }}">Our Team</a></li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['auth' , 'sign-in']) }}">Sign In</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['auth' , 'sign-up']) }}">Sign Up</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['auth' , 'forgot-password']) }}">Forgot Password</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['auth' , 'two-factor-auth']) }}">Two factor
+                                            authentication</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Blog</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['blog' , 'blog']) }}">Blog</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['blog' , 'detail']) }}">Blog Detail</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Help</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['help' , 'center']) }}">Help Center</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['help' , 'detail']) }}">Help Detail</a></li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['help' , 'privacy-policy']) }}">Privacy Policy</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['help' , 'terms-of-service']) }}">Terms of
+                                            Service</a></li>
+                                </ul>
+                            </li>
+
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'pricing']) }}">Pricing</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'faq']) }}">FAQs</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'error']) }}">Error 404</a></li>
+                            <li> <a class="dropdown-item" href="{{ route('second', ['pages' , 'coming-soon']) }}">Coming Soon</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Nav item Account -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accounntMenu"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
+                        <ul class="dropdown-menu" aria-labelledby="accounntMenu">
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">User Profile</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['account' , 'profile']) }}">My Profile</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['account' , 'bookings']) }}">My Bookings</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['account' , 'travelers']) }}">Travelers</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="account-payment-details.html">Payment
+                                            Details</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['account' , 'wishlist']) }}">Wishlist</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['account' , 'settings']) }}">Settings</a> </li>
+                                    <li> <a class="dropdown-item" href="account-delete.html">Delete Profile</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Dropdown submenu -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Agent Dashboard</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'dashboard']) }}">Dashboard</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'listings']) }}">Listings</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'bookings']) }}">Bookings</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'activities']) }}">Activities</a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'earnings']) }}">Earnings</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'reviews']) }}">Reviews</a> </li>
+                                    <li> <a class="dropdown-item" href="{{ route('second', ['agent' , 'settings']) }}">Settings</a> </li>
+                                </ul>
+                            </li>
+
+                            <li> <a class="dropdown-item" href="{{ route('second', ['admin' , 'dashboard']) }}">Master Admin</a> </li>
+                        </ul>
+                    </li>
+
+                    <!-- Nav item link-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <ul class="dropdown-menu min-w-auto" data-bs-popper="none">
+                            <li>
+                                <a class="dropdown-item" href="https://support.stackbros.in/" target="_blank">
+                                    <i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
+                                </a>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://booking.stackbros.in/" target="_blank">
+                                    <i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    target="_blank">
+                                    <i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Booking!
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main navbar END -->
+
+            <!-- Profile and Notification START -->
+            <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+                <!-- Search dropdown START -->
+                <li class="nav-item dropdown nav-search me-3 d-none d-sm-block">
+                    <a class="nav-notification btn btn-light mb-0 p-0" href="#" id="searchDropdown"
+                        role="button" data-bs-auto-close="outside" data-bs-display="static"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-search"> </i>
+                    </a>
+                    <div class="dropdown-menu dropdown-animation dropdown-menu-end p-2"
+                        aria-labelledby="searchDropdown">
+                        <div class="nav flex-nowrap align-items-center">
+                            <div class="nav-item w-100">
+                                <form class="input-group">
+                                    <input class="form-control border-primary" type="search" placeholder="Search..."
+                                        aria-label="Search">
+                                    <button class="btn btn-primary m-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Search dropdown END -->
+
+                <!-- Notification dropdown START -->
+                <li class="nav-item dropdown me-3">
+                    <!-- Notification button -->
+                    <a class="nav-notification btn btn-light p-0 mb-0" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="bi bi-bell fa-fw"></i>
+                    </a>
+                    <!-- Notification dote -->
+                    <span class="notif-badge animation-blink"></span>
+
+                    <!-- Notification dropdown menu START -->
+                    <div
+                        class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md shadow-lg p-0">
+                        <div class="card bg-transparent">
+                            <!-- Card header -->
+                            <div
+                                class="card-header bg-transparent d-flex justify-content-between align-items-center border-bottom">
+                                <h6 class="m-0">Notifications <span
+                                        class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
+                                <a class="small" href="#">Clear all</a>
+                            </div>
+
+                            <!-- Card body START -->
+                            <div class="card-body p-0">
+                                <ul class="list-group list-group-flush list-unstyled p-2">
+                                    <!-- Notification item -->
+                                    <li>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action rounded notif-unread border-0 mb-1 p-3">
+                                            <h6 class="mb-2">New! Booking flights from New York ✈️</h6>
+                                            <p class="mb-0 small">Find the flexible ticket on flights around the
+                                                world. Start searching today</p>
+                                            <span>Wednesday</span>
+                                        </a>
+                                    </li>
+                                    <!-- Notification item -->
+                                    <li>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action rounded border-0 mb-1 p-3">
+                                            <h6 class="mb-2">Sunshine saving are here 🌞 save 30% or more on a
+                                                stay</h6>
+                                            <span>15 Nov 2022</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Card body END -->
+
+                            <!-- Card footer -->
+                            <div class="card-footer bg-transparent text-center border-top">
+                                <a href="#" class="btn btn-sm btn-link mb-0 p-0">See all incoming
+                                    activity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Notification dropdown menu END -->
+                </li>
+                <!-- Notification dropdown END -->
+
+                <!-- Profile dropdown START -->
+                <li class="nav-item dropdown">
+                    <!-- Avatar -->
+                    <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+                        data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img class="avatar-img rounded-2" src="/images/avatar/01.jpg" alt="avatar">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
+                        aria-labelledby="profileDropdown">
+                        <!-- Profile info -->
+                        <li class="px-3 mb-3">
+                            <div class="d-flex align-items-center">
+                                <!-- Avatar -->
+                                <div class="avatar me-3">
+                                    <img class="avatar-img rounded-circle shadow" src="/images/avatar/01.jpg"
+                                        alt="avatar">
+                                </div>
+                                <div>
+                                    <a class="h6 mt-2 mt-sm-0" href="#">Lori Ferguson</a>
+                                    <p class="small m-0">example@gmail.com</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Links -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>My
+                                Bookings</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My
+                                Wishlist</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help
+                                Center</a></li>
+                        <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i
+                                    class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <!-- Dark mode options START -->
+                        <li>
+                            <div
+                                class="nav-pills-primary-soft theme-icon-active d-flex justify-content-between align-items-center p-2 pb-0">
+                                <span>Mode:</span>
+                                <button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
+                                    data-bs-theme-value="light" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                                        <use href="#"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
+                                    data-bs-theme-value="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-moon-stars fa-fw mode-switch"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                                        <path
+                                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                                        <use href="#"></use>
+                                    </svg>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-link nav-link text-primary-hover mb-0 p-0 active"
+                                    data-bs-theme-value="auto" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-circle-half fa-fw mode-switch"
+                                        viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                                        <use href="#"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <!-- Dark mode options END-->
+                    </ul>
+                </li>
+                <!-- Profile dropdown END -->
+            </ul>
+            <!-- Profile and Notification START -->
+        </div>
+    </nav>
+    <!-- Logo Nav END -->
+</header>
+<!-- Header END -->
 @endsection
 
 @section('content')
@@ -163,9 +597,15 @@ class="has-navbar-mobile"
                     <div class="d-lg-flex justify-content-lg-between mb-1">
                         <!-- Title -->
                         <div class="mb-2 mb-lg-0">
-                            <h1 class="fs-2">Soneva  Fushi</h1>
+                            <h1 class="fs-2">Courtyard by Marriott New York </h1>
                             <!-- Location -->
-                            
+                            <p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>5855 W Century Blvd, Los
+                                Angeles - 90045
+                                <a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal"
+                                    data-bs-target="#mapmodal">
+                                    <i class="bi bi-eye-fill me-1"></i>View On Map
+                                </a>
+                            </p>
                         </div>
 
                         <!-- Buttons -->
@@ -201,7 +641,18 @@ class="has-navbar-mobile"
             </div>
             <!-- Title and button END -->
 
-           
+            <!-- Alert box START -->
+            <div class="alert alert-danger alert-dismissible d-flex justify-content-between align-items-center fade show mb-4 rounded-3 pe-2"
+                role="alert">
+                <div class="d-flex">
+                    <span class="alert-heading h5 mb-0 me-2"><i class="bi bi-exclamation-octagon-fill"></i></span>
+                    <span><strong class="alert-heading me-2">Covid Policy:</strong>You may require to present an
+                        RT-PCR negative test report at the hotel</span>
+                </div>
+                <button type="button" class="btn btn-link text-primary-hover pb-0 text-end" data-bs-dismiss="alert"
+                    aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <!-- Alert box END -->
         </div>
     </section>
     <!-- =======================
@@ -216,7 +667,7 @@ class="has-navbar-mobile"
                 <div class="col-md-6">
                     <a data-glightbox data-gallery="gallery" href="/images/gallery/14.jpg">
                         <div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden"
-                            style="background-image:url(/images/ovayo/169627887.jpg); background-position: center left; background-size: cover;">
+                            style="background-image:url(/images/gallery/14.jpg); background-position: center left; background-size: cover;">
                             <!-- Card hover element -->
                             <div class="hover-element position-absolute w-100 h-100">
                                 <i
@@ -233,7 +684,7 @@ class="has-navbar-mobile"
                         <div class="col-12">
                             <a data-glightbox data-gallery="gallery" href="/images/gallery/13.jpg">
                                 <div class="card card-grid-sm card-element-hover card-overlay-hover overflow-hidden"
-                                    style="background-image:url(/images/ovayo/169608949.jpg); background-position: center left; background-size: cover;">
+                                    style="background-image:url(/images/gallery/13.jpg); background-position: center left; background-size: cover;">
                                     <!-- Card hover element -->
                                     <div class="hover-element position-absolute w-100 h-100">
                                         <i
@@ -247,7 +698,7 @@ class="has-navbar-mobile"
                         <div class="col-md-6">
                             <a data-glightbox data-gallery="gallery" href="/images/gallery/12.jpg">
                                 <div class="card card-grid-sm card-element-hover card-overlay-hover overflow-hidden"
-                                    style="background-image:url(/images/ovayo/169645762-1.jpg); background-position: center left; background-size: cover;">
+                                    style="background-image:url(/images/gallery/12.jpg); background-position: center left; background-size: cover;">
                                     <!-- Card hover element -->
                                     <div class="hover-element position-absolute w-100 h-100">
                                         <i
@@ -530,7 +981,10 @@ class="has-navbar-mobile"
                                             <!-- Card img -->
                                             <div class="col-md-5 position-relative">
 
-                                               
+                                                <!-- Overlay item -->
+                                                <div class="position-absolute top-0 start-0 z-index-1 mt-3 ms-4">
+                                                    <div class="badge text-bg-danger">30% Off</div>
+                                                </div>
 
                                                 <!-- Slider START -->
                                                 <div
@@ -581,6 +1035,8 @@ class="has-navbar-mobile"
                                                         </li>
                                                     </ul>
 
+                                                    <p class="text-success mb-0">Free Cancellation till 7 Jan 2022
+                                                    </p>
 
                                                     <!-- Price and Button -->
                                                     <div
@@ -610,7 +1066,10 @@ class="has-navbar-mobile"
                                             <!-- Card img -->
                                             <div class="col-md-5 position-relative">
 
-                                               
+                                                <!-- Overlay item -->
+                                                <div class="position-absolute top-0 start-0 z-index-1 mt-3 ms-4">
+                                                    <div class="badge text-bg-danger">15% Off</div>
+                                                </div>
 
                                                 <!-- Slider START -->
                                                 <div
@@ -656,7 +1115,9 @@ class="has-navbar-mobile"
                                                         <li class="nav-item">Air Conditioning</li>
                                                         <li class="nav-item">Wifi</li>
                                                         <li class="nav-item">Kitchen</li>
-                                                        
+                                                        <li class="nav-item">
+                                                            <a href="#" class="mb-0 text-primary">More+</a>
+                                                        </li>
                                                     </ul>
 
                                                     <p class="text-danger mb-3">Non Refundable</p>
@@ -688,7 +1149,253 @@ class="has-navbar-mobile"
                         </div>
                         <!-- Room END -->
 
-                        
+                        <!-- Customer Review START -->
+                        <div class="card bg-transparent">
+                            <!-- Card header -->
+                            <div class="card-header border-bottom bg-transparent px-0 pt-0">
+                                <h3 class="card-title mb-0">Customer Review</h3>
+                            </div>
+
+                            <!-- Card body START -->
+                            <div class="card-body pt-4 p-0">
+                                <!-- Progress bar and rating START -->
+                                <div class="card bg-light p-4 mb-4">
+                                    <div class="row g-4 align-items-center">
+                                        <!-- Rating info -->
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <!-- Info -->
+                                                <h2 class="mb-0">4.5</h2>
+                                                <p class="mb-2">Based on 120 Reviews</p>
+                                                <!-- Star -->
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item me-0"><i
+                                                            class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i
+                                                            class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i
+                                                            class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i
+                                                            class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i
+                                                            class="fa-solid fa-star-half-alt text-warning"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Progress-bar START -->
+                                        <div class="col-md-8">
+                                            <div class="card-body p-0">
+                                                <div class="row gx-3 g-2 align-items-center">
+                                                    <!-- Progress bar and Rating -->
+                                                    <div class="col-9 col-sm-10">
+                                                        <!-- Progress item -->
+                                                        <div class="progress progress-sm bg-warning bg-opacity-15">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 95%" aria-valuenow="95"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Percentage -->
+                                                    <div class="col-3 col-sm-2 text-end">
+                                                        <span class="h6 fw-light mb-0">85%</span>
+                                                    </div>
+
+                                                    <!-- Progress bar and Rating -->
+                                                    <div class="col-9 col-sm-10">
+                                                        <!-- Progress item -->
+                                                        <div class="progress progress-sm bg-warning bg-opacity-15">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 75%" aria-valuenow="75"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Percentage -->
+                                                    <div class="col-3 col-sm-2 text-end">
+                                                        <span class="h6 fw-light mb-0">75%</span>
+                                                    </div>
+
+                                                    <!-- Progress bar and Rating -->
+                                                    <div class="col-9 col-sm-10">
+                                                        <!-- Progress item -->
+                                                        <div class="progress progress-sm bg-warning bg-opacity-15">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 60%" aria-valuenow="60"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Percentage -->
+                                                    <div class="col-3 col-sm-2 text-end">
+                                                        <span class="h6 fw-light mb-0">60%</span>
+                                                    </div>
+
+                                                    <!-- Progress bar and Rating -->
+                                                    <div class="col-9 col-sm-10">
+                                                        <!-- Progress item -->
+                                                        <div class="progress progress-sm bg-warning bg-opacity-15">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 35%" aria-valuenow="35"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Percentage -->
+                                                    <div class="col-3 col-sm-2 text-end">
+                                                        <span class="h6 fw-light mb-0">35%</span>
+                                                    </div>
+
+                                                    <!-- Progress bar and Rating -->
+                                                    <div class="col-9 col-sm-10">
+                                                        <!-- Progress item -->
+                                                        <div class="progress progress-sm bg-warning bg-opacity-15">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 20%" aria-valuenow="20"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Percentage -->
+                                                    <div class="col-3 col-sm-2 text-end">
+                                                        <span class="h6 fw-light mb-0">15%</span>
+                                                    </div>
+                                                </div> <!-- Row END -->
+                                            </div>
+                                        </div>
+                                        <!-- Progress-bar END -->
+
+                                    </div>
+                                </div>
+                                <!-- Progress bar and rating END -->
+
+                                <!-- Leave review START -->
+                                <form class="mb-5">
+                                    <!-- Rating -->
+                                    <div class="form-control-bg-light mb-3">
+                                        <select class="form-select js-choice">
+                                            <option value="" selected>★★★★★ (5/5)</option>
+                                            <option>★★★★☆ (4/5)</option>
+                                            <option>★★★☆☆ (3/5)</option>
+                                            <option>★★☆☆☆ (2/5)</option>
+                                            <option>★☆☆☆☆ (1/5)</option>
+                                        </select>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="form-control-bg-light mb-3">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your review" rows="3"></textarea>
+                                    </div>
+                                    <!-- Button -->
+                                    <button type="submit" class="btn btn-lg btn-primary mb-0">Post review <i
+                                            class="bi fa-fw bi-arrow-right ms-2"></i></button>
+                                </form>
+                                <!-- Leave review END -->
+
+                                <!-- Review item START -->
+                                <div class="d-md-flex my-4">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-lg me-3 flex-shrink-0">
+                                        <img class="avatar-img rounded-circle" src="/images/avatar/09.jpg"
+                                            alt="avatar">
+                                    </div>
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="d-flex justify-content-between mt-1 mt-md-0">
+                                            <div>
+                                                <h6 class="me-3 mb-0">Jacqueline Miller</h6>
+                                                <!-- Info -->
+                                                <ul class="nav nav-divider small mb-2">
+                                                    <li class="nav-item">Stayed 13 Nov 2022</li>
+                                                    <li class="nav-item">4 Reviews written</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Review star -->
+                                            <div class="icon-md rounded text-bg-warning fs-6">4.5</div>
+                                        </div>
+
+                                        <p class="mb-2">Handsome met debating sir dwelling age material. As style
+                                            lived he worse dried. Offered related so visitors we private removed.
+                                            Moderate do subjects to distance. </p>
+
+                                        <!-- Images -->
+                                        <div class="row g-4">
+                                            <div class="col-4 col-sm-3 col-lg-2">
+                                                <img src="/images/category/hotel/4by3/07.jpg" class="rounded"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-4 col-sm-3 col-lg-2">
+                                                <img src="/images/category/hotel/4by3/08.jpg" class="rounded"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-4 col-sm-3 col-lg-2">
+                                                <img src="/images/category/hotel/4by3/05.jpg" class="rounded"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Child review START -->
+                                <div class="my-4 ps-2 ps-md-3">
+                                    <div class="d-md-flex p-3 bg-light rounded-3">
+                                        <img class="avatar avatar-sm rounded-circle me-3" src="/images/avatar/02.jpg"
+                                            alt="avatar">
+                                        <div class="mt-2 mt-md-0">
+                                            <h6 class="mb-1">Manager</h6>
+                                            <p class="mb-0">But discretion frequently sir she instruments
+                                                unaffected admiration everything. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Child review END -->
+
+                                <!-- Divider -->
+                                <hr>
+                                <!-- Review item END -->
+
+                                <!-- Review item START -->
+                                <div class="d-md-flex my-4">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-lg me-3 flex-shrink-0">
+                                        <img class="avatar-img rounded-circle" src="/images/avatar/08.jpg"
+                                            alt="avatar">
+                                    </div>
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="d-flex justify-content-between mt-1 mt-md-0">
+                                            <div>
+                                                <h6 class="me-3 mb-0">Dennis Barrett</h6>
+                                                <!-- Info -->
+                                                <ul class="nav nav-divider small mb-2">
+                                                    <li class="nav-item">Stayed 02 Nov 2022</li>
+                                                    <li class="nav-item">2 Reviews written</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Review star -->
+                                            <div class="icon-md rounded text-bg-warning fs-6">4.0</div>
+                                        </div>
+
+                                        <p class="mb-0">Delivered dejection necessary objection do Mr prevailed.
+                                            Mr feeling does chiefly cordial in do. Water timed folly right aware if
+                                            oh truth. Large above be to means. Dashwood does provide stronger is.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Divider -->
+                                <hr>
+                                <!-- Review item END -->
+
+                                <!-- Button -->
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-primary-soft mb-0">Load more</a>
+                                </div>
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                        <!-- Customer Review END -->
 
                         <!-- Hotel Policies START -->
                         <div class="card bg-transparent">
@@ -743,7 +1450,16 @@ class="has-navbar-mobile"
                                 </ul>
 
                                 <!-- Important note -->
-                                
+                                <div class="bg-danger bg-opacity-10 rounded-2 p-3 mb-3">
+                                    <p class="mb-0 text-danger">During the COVID-19 pandemic, all hosts and guests
+                                        must review and follow Booking social distancing and other COVID-19-related
+                                        guidelines.</p>
+                                </div>
+                                <div class="bg-danger bg-opacity-10 rounded-2 p-3">
+                                    <p class="mb-0 text-danger">Smoke alarm not reported — The host hasn't reported
+                                        a smoke alarm on the property. We suggest bringing a portable detector for
+                                        your trip.</p>
+                                </div>
                             </div>
                             <!-- Card body END -->
                         </div>
@@ -771,16 +1487,54 @@ class="has-navbar-mobile"
                             </div>
 
                             <!-- Rating -->
-                            
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item me-1 h6 fw-light mb-0"><i
+                                        class="bi bi-arrow-right me-2"></i>4.5</li>
+                                <li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i>
+                                </li>
+                                <li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i>
+                                </li>
+                                <li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i>
+                                </li>
+                                <li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i>
+                                </li>
+                                <li class="list-inline-item me-0 small"><i
+                                        class="fa-solid fa-star-half-alt text-warning"></i></li>
+                            </ul>
 
-                            
+                            <p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Free breakfast
+                                available</p>
 
-                           
+                            <!-- Button -->
+                            <div class="d-grid">
+                                <a href="#room-options" class="btn btn-lg btn-primary-soft mb-0">View 10 Rooms
+                                    Options</a>
+                            </div>
                         </div>
                         <!-- Book now END -->
 
                         <!-- Best deal START -->
-                        
+                        <div class="mt-4 d-none d-xl-block">
+                            <h4>Today's Best Deal</h4>
+
+                            <div class="card shadow rounded-3 overflow-hidden">
+                                <div class="row g-0 align-items-center">
+                                    <!-- Image -->
+                                    <div class="col-sm-6 col-md-12 col-lg-6">
+                                        <img src="/images/offer/04.jpg" class="card-img rounded-0" alt="">
+                                    </div>
+
+                                    <!-- Title and content -->
+                                    <div class="col-sm-6 col-md-12 col-lg-6">
+                                        <div class="card-body p-3">
+                                            <h6 class="card-title"><a href="{{ route('second', ['listing' , 'offer-detail']) }}"
+                                                    class="stretched-link">Travel Plan</a></h6>
+                                            <p class="mb-0">Get up to $10,000 for lifetime limits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Best deal END -->
                     </div>
                 </aside>
@@ -842,16 +1596,16 @@ class="has-navbar-mobile"
                         <div class="tiny-slider-inner rounded-2 overflow-hidden" data-autoplay="true"
                             data-arrow="true" data-dots="false" data-items="1">
                             <!-- Image item -->
-                            <div> <img src="/images/ovayo/169608949.jpg" class="rounded-2" alt="Card image"></div>
+                            <div> <img src="/images/gallery/16.jpg" class="rounded-2" alt="Card image"></div>
 
                             <!-- Image item -->
-                            <div> <img src="/images/ovayo/169612190-1.jpg" class="rounded-2" alt="Card image"> </div>
+                            <div> <img src="/images/gallery/15.jpg" class="rounded-2" alt="Card image"> </div>
 
                             <!-- Image item -->
-                            <div> <img src="/images/ovayo/169627887.jpg" class="rounded-2" alt="Card image"> </div>
+                            <div> <img src="/images/gallery/13.jpg" class="rounded-2" alt="Card image"> </div>
 
                             <!-- Image item -->
-                            <div> <img src="/images/ovayo/169645762-1.jpg" class="rounded-2" alt="Card image"> </div>
+                            <div> <img src="/images/gallery/12.jpg" class="rounded-2" alt="Card image"> </div>
                         </div>
                     </div>
                     <!-- Slider END -->

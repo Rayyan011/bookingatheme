@@ -42,14 +42,14 @@
                     </li>
 
                     <!-- Nav item Hotel -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('second', ['pages', 'hotels']) }}">Hotels</a>
-                    </li>
+                    </li> -->
 
                     <!-- Nav item Flight -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('second', ['pages', 'flights']) }}">Flights</a>
-                    </li>
+                    </li> -->
                     <!-- Nav item About Us -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('second', ['pages', 'why-ovayo']) }}">Why Ovayo</a>
@@ -67,7 +67,7 @@
 
                     <!-- Blog -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('second', ['pages', 'about']) }}">Blog</a>
+                        <a class="nav-link" href="{{ route('second', ['blog', 'blog']) }}">Blog</a>
                     </li>
 
                     <!--  Contact us -->

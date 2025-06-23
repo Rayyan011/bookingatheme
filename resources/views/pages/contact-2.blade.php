@@ -47,7 +47,7 @@
                     
                     </figure>
                     <!-- Image -->
-                    <img src="/images/about/05.jpg" class="rounded-3 position-relative" alt="">
+                    <img src="/images/ovayo/ritz-carlton_arrival.jpg" class="rounded-3 position-relative" alt="">
                 </div>
             </div>
             <!-- Content and form END -->
