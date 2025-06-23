@@ -16,7 +16,7 @@
             <div class="row g-4">
                 <!-- Image -->
                 <div class="col-12">
-                    <img src="/images/blog/13.jpg" class="rounded-3" alt="">
+                    <img src="/images/ovayo/pexels-asad-photo-maldives-11118954.jpg" class="rounded-3" alt="">
                 </div>
                 <!-- Title and content -->
                
@@ -64,16 +64,7 @@
                         necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly
                         right aware if oh truth. </p>
 
-                    <!-- Blockquote -->
-                    <blockquote class="bg-light rounded text-center p-3 p-md-4 my-4">
-                        <h6 class="fw-normal"><i class="fa-solid fa-quote-left me-2"></i>Farther-related bed and
-                            passage comfort civilly. Fulfilled direction use continual set him propriety continued.
-                            Concluded boy perpetual old supposing. Dashwoods see frankness objection abilities.<i
-                                class="fa-solid fa-quote-right ms-2"></i></h6>
-                        <div class="blockquote-footer mb-0 fs-6 mt-3">
-                            Albert Schweitzer
-                        </div>
-                    </blockquote>
+                    
 
                     <p class="mt-3">Concluded boy perpetual old supposing. <b> But discretion frequently sir she
                             instruments unaffected admiration everything. </b> Farther-related bed and passage comfort

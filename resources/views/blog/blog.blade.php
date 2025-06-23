@@ -28,7 +28,7 @@
                     <div class="card bg-transparent mb-4 mb-sm-0">
                         <!-- Image -->
                         <div class="position-relative">
-                            <img src="/images/blog/10.jpg" class="card-img" alt="">
+                            <img src="/images/ovayo/pexels-asad-photo-maldives-11118954.jpg" class="card-img" alt="">
                             <!-- Badge -->
                             <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                 <a href="#" class="badge bg-dark">Adventure</a>
@@ -63,7 +63,7 @@
                             <div class="row g-3 g-sm-4 align-items-sm-center">
                                 <!-- Image -->
                                 <div class="col-4">
-                                    <img src="/images/blog/05.jpg" class="card-img" alt="">
+                                    <img src="/images/ovayo/Sandbank_Wedding_Couple walking 5.jpg" class="card-img" alt="">
                                 </div>
                                 <div class="col-8">
                                     <!-- card body -->
@@ -93,7 +93,7 @@
                             <div class="row g-3 g-sm-4 align-items-sm-center">
                                 <!-- Image -->
                                 <div class="col-4">
-                                    <img src="/images/blog/06.jpg" class="card-img" alt="">
+                                    <img src="/images/ovayo/luxury-resort-maldives-finolhu-big-game-fishing-03.jpg" class="card-img" alt="">
                                 </div>
                                 <div class="col-8">
                                     <!-- card body -->
@@ -123,7 +123,7 @@
                             <div class="row g-3 g-sm-4 align-items-sm-center">
                                 <!-- Image -->
                                 <div class="col-4">
-                                    <img src="/images/blog/08.jpg" class="card-img" alt="">
+                                    <img src="/images/ovayo/DSC03085.jpg" class="card-img" alt="">
                                 </div>
                                 <div class="col-8">
                                     <!-- card body -->
@@ -175,7 +175,7 @@
                     <div class="card bg-transparent">
                         <!-- Image -->
                         <div class="position-relative">
-                            <img src="/images/blog/07.jpg" class="card-img" alt="">
+                            <img src="/images/ovayo/Euconica_FLOATING BREAKFAST - 011_.jpg" class="card-img" alt="">
                             <!-- Badge -->
                             <div class="card-img-overlay p-3">
                                 <a href="#" class="badge text-bg-warning mb-2">History</a>
@@ -197,7 +197,7 @@
                     <div class="card bg-transparent">
                         <!-- Image -->
                         <div class="position-relative">
-                            <img src="/images/blog/07.jpg" class="card-img" alt="">
+                            <img src="/images/ovayo/Euconica_Private Beach Dinner - 003_.jpg" class="card-img" alt="">
                             <!-- Badge -->
                             <div class="card-img-overlay p-3">
                                 <a href="#" class="badge text-bg-warning mb-2">History</a>
@@ -224,7 +224,7 @@
                     <div class="card bg-transparent">
                         <!-- Image -->
                         <div class="position-relative">
-                            <img src="/images/blog/11.jpg" class="card-img" alt="">
+                            <img src="/images/ovayo/Euconica_Private Beach Dinner - 004_.jpg" class="card-img" alt="">
                             <!-- Badge -->
                             <div class="card-img-overlay p-3">
                                 <a href="#" class="badge text-bg-danger mb-2">Business</a>
@@ -242,75 +242,7 @@
                 </div>
                 <!-- Blog item END -->
 
-                <!-- Blog item START -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 bg-transparent">
-                        <!-- Card image -->
-                        <div class="card-img-top rounded overflow-hidden position-relative hover-overlay-top">
-                            <div class="ratio ratio-4x3 bg-dark">
-                                <iframe
-                                    src="https://player.vimeo.com/video/167434033?title=0&amp;byline=0&amp;portrait=0"
-                                    allowfullscreen=""></iframe>
-                            </div>
-                        </div>
-                        <!-- Card Body -->
-                        <div class="card-body p-3 pb-0">
-                            <!-- badge -->
-                            <a href="#" class="badge text-bg-info mb-2">Technology</a>
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['blog', 'detail']) }}">10 things you
-                                    need to know about Booking</a></h5>
-                            <h6 class="fw-light mb-0">By <a href="#">Amanda Reed</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog item END -->
-
-                <!-- Blog item START -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-transparent">
-                        <!-- Image -->
-                        <div class="position-relative">
-                            <img src="/images/blog/09.jpg" class="card-img" alt="">
-                            <!-- Badge -->
-                            <div class="card-img-overlay p-3">
-                                <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body p-3 pb-0">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['blog', 'detail']) }}">Never
-                                    underestimate the influence of social media</a></h5>
-                            <h6 class="fw-light mb-0">By <a href="#">Bryan Knight</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog item END -->
-
-                <!-- Blog item START -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-transparent">
-                        <!-- Image -->
-                        <div class="position-relative">
-                            <img src="/images/blog/12.jpg" class="card-img" alt="">
-                            <!-- Badge -->
-                            <div class="card-img-overlay p-3">
-                                <a href="#" class="badge text-bg-success mb-2">Hotel Service</a>
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body p-3 pb-0">
-                            <!-- Title -->
-                            <h5 class="card-title"><a href="{{ route('second', ['blog', 'detail']) }}">This is why
-                                    this year will be the year of startups</a></h5>
-                            <h6 class="fw-light mb-0">By <a href="#">Carolyn Ortiz</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog item END -->
+               
             </div>
 
             <!-- Buttons -->
