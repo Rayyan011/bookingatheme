@@ -1,11 +1,7 @@
 @extends('layouts.base')
 
-@section('body-attributes')
-class="has-navbar-mobile"
-@endsection
-
 @section('header')
-@include('layouts.partials/navbar2')
+@include('layouts.partials/navbar')
 @endsection
 
 @section('content')
@@ -523,7 +519,20 @@ class="has-navbar-mobile"
                             </div>
                             <!-- Fare summary END -->
 
-                           
+                            <!-- Coupon START -->
+                            <div class="col-md-6 col-xl-12">
+                                <div class="card card-body bg-light">
+                                    <div class="cardt-title">
+                                        <h5>Offer & Discount</h5>
+                                    </div>
+                                    <!-- Input group -->
+                                    <div class="input-group mt-2">
+                                        <input class="form-control form-control" placeholder="Coupon code">
+                                        <button type="button" class="btn btn-primary">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Coupon END -->
 
                             <!-- Cancel policy START -->
                             <div class="col-md-6 col-xl-12">

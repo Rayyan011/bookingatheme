@@ -1,11 +1,7 @@
 @extends('layouts.base')
 
-@section('body-attributes')
-class="has-navbar-mobile"
-@endsection
-
 @section('header')
-@include('layouts.partials/navbar2')
+@include('layouts.partials/navbar')
 @endsection
 
 @section('content')
@@ -30,7 +26,9 @@ class="has-navbar-mobile"
                         <!-- Card body START -->
                         <div class="card-body p-0 mt-3">
                             <!-- Alert box -->
-                            <
+                            <div class="alert alert-success" role="alert">
+                                Hey' you are saving<strong class="mx-1">$2,560</strong>discount using coupon code
+                            </div>
 
                             <form class="bg-light rounded-3 p-4">
                                 <!-- Card options -->

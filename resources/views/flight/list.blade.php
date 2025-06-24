@@ -1,7 +1,11 @@
 @extends('layouts.base')
 
+@section('body-attributes')
+class="has-navbar-mobile"
+@endsection
+
 @section('header')
-@include('layouts.partials/navbar')
+@include('layouts.partials/navbar2')
 @endsection
 
 @section('content')
@@ -220,33 +224,6 @@
                 </div>
             </div>
             <!-- Title and button END -->
-
-            <!-- Notice board START -->
-            <div class="bg-primary bg-opacity-10 rounded-3 overflow-hidden mt-4 p-4">
-                <div class="row g-4 align-items-center">
-                    <!-- Image -->
-                    <div class="col-6 col-md-3 text-center order-1">
-                        <img src="/images/element/11.svg" class="mb-n5" alt="">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="col-md-6 order-md-2">
-                        <!-- Title -->
-                        <h4>International Guideline</h4>
-                        <!-- Content -->
-                        <p class="mb-2">COVID safety measures adopted by various countries including VISA
-                            restrictions, quarantine rules, etc.</p>
-                        <!-- Button -->
-                        <a href="#" class="btn btn-sm btn-primary mb-0">View Guidelines</a>
-                    </div>
-
-                    <!-- Image -->
-                    <div class="col-6 col-md-3 text-center order-3">
-                        <img src="/images/element/10.svg" class="mb-n5" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- Notice board END -->
 
         </div>
     </section>
