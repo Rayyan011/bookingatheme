@@ -224,7 +224,7 @@
                     <div class="team-card-image">
                         <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile picture of Imran">
                     </div>
-                    <h3 class="team-card-name">Imran</h3>
+                    <h5 class="team-card-name">Imran</h5>
                     <p class="team-card-role">Lagoon Specialist</p>
                     <a href="#" class="btn btn-match">Match Me</a>
                 </div>
@@ -234,7 +234,7 @@
                     <div class="team-card-image">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile picture of Aisha">
                     </div>
-                    <h3 class="team-card-name">Aisha</h3>
+                    <h5 class="team-card-name">Aisha</h5>
                     <p class="team-card-role">Cultural Specialist</p>
                     <a href="#" class="btn btn-match">Match Me</a>
                 </div>
@@ -244,7 +244,15 @@
                     <div class="team-card-image">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile picture of Rasheed">
                     </div>
-                    <h3 class="team-card-name">Rasheed</h3>
+                    <h5 class="team-card-name">Rasheed</h5>
+                    <p class="team-card-role">Ocean Specialist</p>
+                    <a href="#" class="btn btn-match">Match Me</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile picture of Rasheed">
+                    </div>
+                    <h5 class="team-card-name">Rasheed</h5>
                     <p class="team-card-role">Ocean Specialist</p>
                     <a href="#" class="btn btn-match">Match Me</a>
                 </div>
