@@ -97,14 +97,14 @@
                 <ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
                     <!-- Nav item Hotel -->
                     <li class="nav-item"> 
-                        <a class="nav-link active" href="{{ route('root') }}">
+                        <a class="nav-link{{ request()->is('hotel*') ? ' active' : '' }}" href="{{ route('second', ['hotel', 'index']) }}">
                             <i class="fa-solid fa-hotel me-2"></i>Hotel
                         </a> 
                     </li>
 
                     <!-- Nav item Flight -->
                     <li class="nav-item"> 
-                        <a class="nav-link" href="{{ route('second', ['flight' , 'index-flight']) }}">
+                        <a class="nav-link{{ request()->is('flight*') ? ' active' : '' }}" href="{{ route('second', ['flight' , 'index-flight']) }}">
                             <i class="fa-solid fa-plane me-2"></i>Flight
                         </a> 
                     </li>
