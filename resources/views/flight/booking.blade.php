@@ -184,7 +184,7 @@ class="has-navbar-mobile"
 
                                 <!-- Card footer -->
                                 <div class="card-footer border-top text-center p-3">
-                                    <a href="#" class="btn btn-link mb-0 p-0">Review booking</a>
+                                    <a href="/flight/detail" class="btn btn-link mb-0 p-0">Review booking</a>
                                 </div>
                             </div>
                         </div>

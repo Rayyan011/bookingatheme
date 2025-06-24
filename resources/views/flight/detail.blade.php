@@ -462,8 +462,7 @@ class="has-navbar-mobile"
 
                                 <!-- Button -->
                                 <div class="d-grid mt-4">
-                                    <a href="{{ route('second', ['flight', 'booking']) }}"
-                                        class="btn btn-primary mb-0">Proceed To Payment</a>
+                                    <a href="/flight/booking" class="btn btn-primary mb-0">Proceed To Payment</a>
                                 </div>
                             </div>
                             <!-- Card body END -->

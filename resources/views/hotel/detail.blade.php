@@ -138,7 +138,7 @@ class="has-navbar-mobile"
 
                             <!-- Button -->
                             <div class="col-md-6 col-lg-2 mt-md-auto">
-                                <a class="btn btn-lg btn-primary w-100 mb-0" href="#"><i
+                                <a class="btn btn-lg btn-primary w-100 mb-0" href="/hotel/list"><i
                                         class="bi bi-search fa-fw"></i>Search</a>
                             </div>
 
@@ -594,7 +594,7 @@ class="has-navbar-mobile"
                                                         </div>
                                                         <!-- Price -->
                                                         <div class="mt-3 mt-sm-0">
-                                                            <a href="#"
+                                                            <a href="/hotel/booking"
                                                                 class="btn btn-sm btn-primary mb-0">Select Room</a>
                                                         </div>
                                                     </div>
@@ -673,7 +673,7 @@ class="has-navbar-mobile"
                                                         </div>
                                                         <!-- Price -->
                                                         <div class="mt-3 mt-sm-0">
-                                                            <a href="#"
+                                                            <a href="/hotel/booking"
                                                                 class="btn btn-sm btn-primary mb-0">Select Room</a>
                                                         </div>
                                                     </div>

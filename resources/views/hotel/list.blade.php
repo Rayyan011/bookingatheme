@@ -142,7 +142,7 @@ class="has-navbar-mobile"
                     </div>
                     <!-- Button -->
                     <div class="btn-position-md-middle">
-                        <a class="icon-lg btn btn-round btn-primary mb-0" href="#"><i
+                        <a class="icon-lg btn btn-round btn-primary mb-0" href="/hotel/grid"><i
                                 class="bi bi-search fa-fw"></i></a>
                     </div>
                 </form>
@@ -660,7 +660,7 @@ class="has-navbar-mobile"
                                             </div>
                                             <!-- Price -->
                                             <div class="mt-3 mt-sm-0">
-                                                <a href="#" class="btn btn-sm btn-dark mb-0 w-100">Select
+                                                <a href="/hotel/detail" class="btn btn-sm btn-dark mb-0 w-100">Select
                                                     Room</a>
                                             </div>
                                         </div>
@@ -762,8 +762,7 @@ class="has-navbar-mobile"
                                             </div>
                                             <!-- Price -->
                                             <div class="mt-3 mt-sm-0">
-                                                <a href="{{ route('second', ['hotel', 'detail']) }}"
-                                                    class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
+                                                <a href="/hotel/detail" class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
                                             </div>
                                         </div>
                                     </div>
@@ -867,8 +866,7 @@ class="has-navbar-mobile"
                                             </div>
                                             <!-- Price -->
                                             <div class="mt-3 mt-sm-0">
-                                                <a href="{{ route('second', ['hotel', 'detail']) }}"
-                                                    class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
+                                                <a href="/hotel/detail" class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
                                             </div>
                                         </div>
                                     </div>
@@ -995,8 +993,7 @@ class="has-navbar-mobile"
                                             </div>
                                             <!-- Price -->
                                             <div class="mt-3 mt-sm-0">
-                                                <a href="{{ route('second', ['hotel', 'detail']) }}"
-                                                    class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
+                                                <a href="/hotel/detail" class="btn btn-sm btn-dark mb-0 w-100">Select Room</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1097,7 +1094,7 @@ class="has-navbar-mobile"
                                             </div>
                                             <!-- Price -->
                                             <div class="mt-3 mt-sm-0">
-                                                <a href="#" class="btn btn-sm btn-dark mb-0 w-100">Select
+                                                <a href="/hotel/detail" class="btn btn-sm btn-dark mb-0 w-100">Select
                                                     Room</a>
                                             </div>
                                         </div>

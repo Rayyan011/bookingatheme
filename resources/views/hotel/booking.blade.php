@@ -191,7 +191,7 @@ class="has-navbar-mobile"
                                         <div class="form-check mb-1">
                                             <input class="form-check-input" type="checkbox" id="terms" required checked>
                                             <label class="form-check-label" for="terms">
-                                                I have read and accept the <a href="#" class="text-primary">terms and conditions</a>
+                                                I have read and accept the <a href="/hotel/detail" class="text-primary">terms and conditions</a>
                                             </label>
                                         </div>
                                         <div class="text-danger mb-3" style="display: none;" id="termsError">

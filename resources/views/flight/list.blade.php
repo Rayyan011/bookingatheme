@@ -115,7 +115,7 @@ class="has-navbar-mobile"
                                     </div>
 
                                     <div class="col-12 text-end pt-0">
-                                        <a class="btn btn-primary mb-n4" href="#">Find ticket <i
+                                        <a class="btn btn-primary mb-n4" href="/flight/detail">Find ticket <i
                                                 class="bi bi-arrow-right ps-3"></i></a>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ class="has-navbar-mobile"
                                     </div>
 
                                     <div class="col-12 text-end pt-0">
-                                        <a class="btn btn-primary mb-n4" href="#">Find ticket <i
+                                        <a class="btn btn-primary mb-n4" href="/flight/detail">Find ticket <i
                                                 class="bi bi-arrow-right ps-3"></i></a>
                                     </div>
                                 </div>
@@ -602,8 +602,7 @@ class="has-navbar-mobile"
                                     <div class="col-sm-4 col-md-3">
                                         <!-- Price -->
                                         <h4>$18,500</h4>
-                                        <a href="{{ route('second', ['flight', 'detail']) }}"
-                                            class="btn btn-dark">Book Now</a>
+                                        <a href="/flight/detail" class="btn btn-dark">Book Now</a>
                                         <button class="btn btn-link text-decoration-underline p-0 mb-0"
                                             data-bs-toggle="modal" data-bs-target="#flightdetail">
                                             <i class="bi bi-eye-fill me-1"></i>Flight Details
@@ -673,8 +672,7 @@ class="has-navbar-mobile"
                                     <!-- Price -->
                                     <div class="col-md-3 text-md-end">
                                         <h4>$18,500</h4>
-                                        <a href="{{ route('second', ['flight', 'detail']) }}"
-                                            class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
+                                        <a href="/flight/detail" class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
                                         <button class="btn btn-link text-decoration-underline p-0 mb-0"
                                             data-bs-toggle="modal" data-bs-target="#flightdetail">
                                             <i class="bi bi-eye-fill me-1"></i>Flight Details
@@ -741,8 +739,7 @@ class="has-navbar-mobile"
                                     <!-- Price -->
                                     <div class="col-md-3 text-md-end">
                                         <h4>$18,500</h4>
-                                        <a href="{{ route('second', ['flight', 'detail']) }}"
-                                            class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
+                                        <a href="/flight/detail" class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
                                     </div>
                                 </div>
                                 <!-- Ticket item END -->
@@ -1154,8 +1151,7 @@ class="has-navbar-mobile"
                                     <div class="col-md-3 text-md-end">
                                         <!-- Price -->
                                         <h4>$18,500</h4>
-                                        <a href="{{ route('second', ['flight', 'detail']) }}"
-                                            class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
+                                        <a href="/flight/detail" class="btn btn-dark mb-0 mb-sm-2">Book Now</a>
                                         <button class="btn btn-link text-decoration-underline p-0 mb-0"
                                             data-bs-toggle="modal" data-bs-target="#flightdetail">
                                             <i class="bi bi-eye-fill me-1"></i>Flight Details
