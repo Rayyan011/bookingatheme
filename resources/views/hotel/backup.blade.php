@@ -996,4 +996,25 @@ class="has-navbar-mobile"
     </section>
     <!-- =======================
         Download app END -->
+
+    <!-- Action box START -->
+    <div
+        class="bg-success bg-opacity-10 p-3 rounded-2 d-sm-flex justify-content-sm-between align-items-center">
+        <!-- Title and badge -->
+        <div class="d-flex align-items-center mb-3 mb-sm-0">
+            <div class="position-relative z-index-1 me-2">
+                <img src="/images/element/05.svg" class="position-relative h-40px"
+                    alt="">
+                <span
+                    class="smaller text-white position-absolute top-50 start-50 translate-middle">New</span>
+            </div>
+            <!-- Title -->
+            <h6 class="mb-0 fw-normal">Get <strong class='text-success'>12% Off</strong> On Your
+                First Flight</h6>
+        </div>
+
+        <!-- Button -->
+        <a href="#" class="btn btn-sm btn-success mb-0">Login / Signup</a>
+    </div>
+    <!-- Action box END -->
 </main>

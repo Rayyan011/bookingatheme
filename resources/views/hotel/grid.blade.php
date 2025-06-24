@@ -540,7 +540,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$750</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$750</h5>
                                     <span class="mb-0 me-2">/day</span>
                                     <span class="text-decoration-line-through">$1000</span>
                                 </div>
@@ -591,7 +591,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$1200</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$1200</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -642,7 +642,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$980</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$980</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -693,7 +693,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$1400</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$1400</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -743,7 +743,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$680</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$680</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -793,7 +793,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$740</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$740</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -844,7 +844,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$570</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$570</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -895,7 +895,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$896</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$896</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->
@@ -945,7 +945,7 @@ class="has-navbar-mobile"
                             <div class="d-sm-flex justify-content-sm-between align-items-center">
                                 <!-- Price -->
                                 <div class="d-flex align-items-center">
-                                    <h5 class="fw-normal text-success mb-0 me-1">$475</h5>
+                                    <h5 class="fw-normal text-ovayo-turqoise mb-0 me-1">$475</h5>
                                     <span class="mb-0 me-2">/day</span>
                                 </div>
                                 <!-- Button -->

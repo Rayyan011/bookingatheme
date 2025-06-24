@@ -10,7 +10,7 @@
 
     <!-- =======================
             Main banner START -->
-    <section class="pt-4 pt-md-5">
+    <section class="pt-4 pt-md-5 bg-ovayo-10">
         <div class="container">
             <!-- Content and form START -->
             <div class="row g-4">
@@ -21,17 +21,17 @@
                     <!-- Contact form -->
                     <form class="mt-4">
                         <!-- Name -->
-                        <div class="mb-4 form-control-bg-light">
+                        <div class="mb-4 form-control-bg-ov">
                             <label class="form-label">Your name *</label>
                             <input type="text" class="form-control">
                         </div>
                         <!-- Email -->
-                        <div class="mb-4 form-control-bg-light">
+                        <div class="mb-4 form-control-bg-ov">
                             <label class="form-label">Email address *</label>
                             <input type="email" class="form-control">
                         </div>
                         <!-- Message -->
-                        <div class="mb-4 form-control-bg-light">
+                        <div class="mb-4 form-control-bg-ov">
                             <label class="form-label">Message *</label>
                             <textarea class="form-control" rows="4"></textarea>
                         </div>

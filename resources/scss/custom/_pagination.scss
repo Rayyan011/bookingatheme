@@ -24,8 +24,10 @@
   border: none;
   padding: 4px;
   border-radius: $border-radius;
+  
   .page-item{
     margin: 3px;
+    
     &.page-item.active .page-link{
       color: $white;
       background-color: var(--#{$prefix}primary);
@@ -35,7 +37,7 @@
     border: transparent;
     border-radius: $border-radius !important;
     color: var(--#{$prefix}gray-700);
-    background-color: var(--#{$prefix}light);
+    background-color: $ovayo-light-80;
     &:hover {
       z-index: 2;
       color: $white;

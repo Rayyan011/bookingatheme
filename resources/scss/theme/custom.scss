@@ -1,4 +1,16 @@
-// VARIABLES
+// --- VARIABLES ---
+$container-bg: $ovayo-light-10;       // Light grey background for the main container
+$container-padding: 2rem;
+$prompt-font-size: 1.25rem;
+$prompt-font-color: $black;   // Dark grey for the text
+$form-padding: 0.5rem;
+$grid-gap: 3rem;
+$image-gap: 1rem;
+$border-radius: 16px;
+$transition-base: all 0.3s ease-in-out; 
+$box-shadow-ov: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+// CLASSES
 .bg-ovayo-10{
   background-color: $ovayo-light-10;
 }
@@ -12,18 +24,42 @@
   background-color: $ovayo-light-100;
 }
 
+.text-ovayo-10{
+  color: $ovayo-light-10;
+}
+.text-ovayo-30{
+  color: $ovayo-light-30;
+}
+.text-ovayo-80{
+  color: $ovayo-light-80;
+}
+.text-ovayo-100{
+  color: $ovayo-light-100;
+}
+.text-ovayo-sunset{
+    color: $ovayo-sunset-coral;
+}
+.text-ovayo-turqoise{
+    color: $ovayo-lagoon-turqoise;
+}
+.text-ovayo-dark{
+    color: $ovayo-dark-text;
+}
 
-// --- VARIABLES ---
-$container-bg: $ovayo-light-10;       // Light grey background for the main container
-$container-padding: 2rem;
-$prompt-font-size: 1.25rem;
-$prompt-font-color: $black;   // Dark grey for the text
-$form-padding: 0.5rem;
-$grid-gap: 3rem;
-$image-gap: 1rem;
-$border-radius: 16px;
-$transition-base: all 0.3s ease-in-out; 
-$box-shadow-ov: 0 4px 15px rgba(0, 0, 0, 0.05);
+.shadow-ov{
+    box-shadow: $box-shadow-ov;
+}
+
+.form-control-bg-ov {
+  .form-control{
+    border-color: $ovayo-light-80;
+    background-color: $ovayo-light-30;
+    &:focus{
+      border-color: $input-focus-border-color !important;
+    }
+  }
+}
+
 
 .whisper-container {
   background-color: $ovayo-light-10;

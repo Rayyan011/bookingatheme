@@ -30,13 +30,13 @@ class="has-navbar-mobile"
                         data-bs-target="#offcanvasEditsearch" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body p-2">
-                    <div class="bg-light p-4 rounded w-100">
+                    <div class="bg-ovayo-10 p-4 rounded w-100 shadow-ov">
                         <form class="row g-4">
                             <!-- Location -->
                             <div class="col-md-6 col-lg-4">
                                 <div class="form-size-lg form-fs-md">
                                     <!-- Select input -->
-                                    <label class="form-label">Location</label>
+                                    <label class="form-label h6 text-ovayo-dark">Location</label>
                                     <select class="form-select js-choice" data-search-enabled="true">
                                         <option value="">Select location</option>
                                         <option selected>San Jacinto, USA</option>
@@ -50,7 +50,7 @@ class="has-navbar-mobile"
                             <div class="col-md-6 col-lg-3">
                                 <!-- Date input -->
                                 <div class="form-fs-md">
-                                    <label class="form-label">Check in - out</label>
+                                    <label class="form-label h6 text-ovayo-dark">Check in - out</label>
                                     <input type="text" class="form-control form-control-lg flatpickr"
                                         data-mode="range" placeholder="Select date" value="19 Sep to 28 Sep">
                                 </div>
@@ -61,7 +61,7 @@ class="has-navbar-mobile"
                                 <div class="form-fs-md">
                                     <!-- Dropdown input -->
                                     <div class="w-100">
-                                        <label class="form-label">Guests & rooms</label>
+                                        <label class="form-label h6 text-ovayo-dark">Guests & rooms</label>
                                         <div class="dropdown guest-selector me-2">
                                             <input type="text"
                                                 class="form-guest-selector form-control form-control-lg selection-result"
@@ -525,7 +525,7 @@ class="has-navbar-mobile"
                                 <div class="vstack gap-4">
 
                                     <!-- Room item START -->
-                                    <div class="card shadow p-3">
+                                    <div class="card bg-ovayo-10 shadow p-3">
                                         <div class="row g-4">
                                             <!-- Card img -->
                                             <div class="col-md-5 position-relative">
@@ -605,7 +605,7 @@ class="has-navbar-mobile"
                                     <!-- Room item END -->
 
                                     <!-- Room item START -->
-                                    <div class="card shadow p-3">
+                                    <div class="card bg-ovayo-10 shadow p-3">
                                         <div class="row g-4">
                                             <!-- Card img -->
                                             <div class="col-md-5 position-relative">
@@ -759,7 +759,7 @@ class="has-navbar-mobile"
                         <div class="card card-body border">
 
                             <!-- Title -->
-                            <div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
+                            <div class="d-sm-flex justify-content-sm-between align-items-center mb-3 bg-ovayo-10">
                                 <div>
                                     <span>Price Start at</span>
                                     <h4 class="card-title mb-0">$3,500</h4>
