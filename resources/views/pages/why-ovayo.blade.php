@@ -69,147 +69,7 @@
     Core Values END -->
 
 
-    <!-- =======================
-    Team START -->
-    <section class="team-section">
-        <div class="container">
-            <h2 class="section-title text-center">Meet the Wish Keepers</h2>
 
-            <!-- Team START -->
-            <div class="row g-4">
-
-                <!-- Team item START -->
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                    <div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/team/01.jpg" class="card-img" alt="">
-                            <!-- Card overlay -->
-                            <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                                <!-- Badge -->
-                                <span class="badge text-bg-white"><i
-                                        class="fa-solid fa-star text-warning me-2"></i>4.3</span>
-                                <!-- Social button -->
-                                <div class="btn-group hover-element d-flex mt-auto">
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-facebook-f text-facebook"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-instagram text-instagram"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-twitter text-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card body -->
-                        <div class="card-body px-2 pb-0">
-                            <h5 class="card-title mb-1"><a href="#">Dennis Barrett</a></h5>
-                            <span>UK Tourist Guide</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team item END -->
-
-                <!-- Team item START -->
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                    <div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/team/02.jpg" class="card-img" alt="">
-                            <!-- Card overlay -->
-                            <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                                <!-- Badge -->
-                                <span class="badge text-bg-white"><i
-                                        class="fa-solid fa-star text-warning me-2"></i>4.3</span>
-                                <!-- Social button -->
-                                <div class="btn-group hover-element d-flex mt-auto">
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-facebook-f text-facebook"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-instagram text-instagram"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-twitter text-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card body -->
-                        <div class="card-body px-2 pb-0">
-                            <h5 class="card-title mb-1"><a href="#">Jacqueline Miller</a></h5>
-                            <span>Us Tourist Guide</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team item END -->
-
-                <!-- Team item START -->
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                    <div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/team/03.jpg" class="card-img" alt="">
-                            <!-- Card overlay -->
-                            <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                                <!-- Badge -->
-                                <span class="badge text-bg-white"><i
-                                        class="fa-solid fa-star text-warning me-2"></i>4.3</span>
-                                <!-- Social button -->
-                                <div class="btn-group hover-element d-flex mt-auto">
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-facebook-f text-facebook"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-instagram text-instagram"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-twitter text-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card body -->
-                        <div class="card-body px-2 pb-0">
-                            <h5 class="card-title mb-1"><a href="#">Larry Lawson</a></h5>
-                            <span>Editor in Chief</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team item END -->
-
-                <!-- Team item START -->
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                    <div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
-                        <div class="card-img-scale-wrapper rounded-3">
-                            <!-- Image -->
-                            <img src="/images/team/04.jpg" class="card-img" alt="">
-                            <!-- Card overlay -->
-                            <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                                <!-- Badge -->
-                                <span class="badge text-bg-white"><i
-                                        class="fa-solid fa-star text-warning me-2"></i>4.3</span>
-                                <!-- Social button -->
-                                <div class="btn-group hover-element d-flex mt-auto">
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-facebook-f text-facebook"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-instagram text-instagram"></i></a>
-                                    <a href="#" class="btn btn-white"><i
-                                            class="fa-brands fa-twitter text-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card body -->
-                        <div class="card-body px-2 pb-0">
-                            <h5 class="card-title mb-1"><a href="#">Louis Ferguson</a></h5>
-                            <span>CEO & Founder</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team item END -->
-
-                
-
-            </div>
-            <!-- Team END -->
-        </div>
-    </section>
-    <!-- =======================
-    Team END -->
 
 
     
@@ -259,6 +119,42 @@
             </div>
         </div>
     </section>
+
+        <!-- =======================
+        Client START -->
+    <section class="bg-ovayo-30">
+        <div class="container">
+            <div class="row">
+                <!-- Client logo START -->
+                <div class="col-12">
+                    <div class="rounded-3 p-5">
+                        <!-- Title -->
+                        <h5 class="text-center mb-4 mb-md-5">Trusted by</h5>
+
+                        <!-- Slider START -->
+                        <div class="tiny-slider arrow-round">
+                            <div class="tiny-slider-inner" data-arrow="false" data-autoplay="true" data-edge="2"
+                                data-dots="false" data-gutter="80" data-items-xl="5" data-items-lg="4"
+                                data-items-md="3" data-items-sm="2" data-items-xs="1">
+                                <!-- Slide item START -->
+                                <div class="item"><img src="/images/client/01.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/02.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/08.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/05.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/06.svg" alt=""> </div>
+                                <div class="item"><img src="/images/client/03.svg" alt=""> </div>
+                                <!-- Slide item END -->
+                            </div>
+                        </div>
+                        <!-- Slider END -->
+                    </div>
+                </div>
+                <!-- Client logo END -->
+            </div>
+        </div>
+    </section>
+    <!-- =======================
+        Client END -->
 <!-- =======================
 Team END -->
 

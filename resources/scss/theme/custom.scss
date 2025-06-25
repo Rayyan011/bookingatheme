@@ -23,6 +23,9 @@ $box-shadow-ov: 0 4px 15px rgba(0, 0, 0, 0.05);
 .bg-ovayo-100{
   background-color: $ovayo-light-100;
 }
+// .bg-ovayo-driftwood {
+//     background-color: $ovayo-driftwood-taupe;
+// }
 
 .text-ovayo-10{
   color: $ovayo-light-10;
@@ -337,3 +340,564 @@ $box-shadow-ov: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
     }
 }
+
+
+// SCSS for the Sustainability section.
+// This file assumes your _variables.scss is imported globally.
+
+.sustainability-section {
+    // background-color: $body-bg;
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+    
+    .page-title {
+        @extend h1; // Use h1 styles but on a different element if needed
+        font-family: $headings-font-family;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: map-get($spacers, 4);
+    }
+
+    .coral-divider {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: map-get($spacers, 4);
+        
+        // The SVG fill color is set inline, but you can override it here if needed
+        // svg path {
+        //  fill: $ovayo-sunset-coral;
+        // }
+    }
+
+    .restored-counter {
+        color: $headings-color;
+        font-size: $font-size-base;
+        font-weight: $font-weight-normal;
+        margin-bottom: map-get($spacers, 6);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: map-get($spacers, 8);
+        }
+    }
+    
+    .case-study-title {
+        @extend h3; // Use h3 styles
+        margin-bottom: map-get($spacers, 6);
+    }
+
+    .case-study-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $grid-gutter-width;
+        text-align: left;
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    // --- Case Study Card Styling ---
+    // Using the default .card styles from your variables
+    .card {
+        background-color: $card-bg; // $ovayo-light-10
+        border-radius: $card-border-radius; // $border-radius-lg
+        border: $card-border-width; // 0
+        box-shadow: $box-shadow-ov;
+    }
+    
+    // Ensure images have the correct top border radius
+    .card-img, .card-img-top {
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        max-height: 250px;
+    }
+    
+    .card-body {
+        // Use padding variables from your card component
+        padding: map-get($spacers, 4) $card-spacer-x;
+    }
+
+    .card-title {
+        // Use heading variables for consistency
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        color: $card-title-color; // $headings-color
+        margin-bottom: $headings-margin-bottom;
+        font-size: $h4-font-size; // Using h4 for a good hierarchy
+    }
+
+    .card-text {
+        // Uses default body color
+        font-size: $font-size-base;
+    }
+}
+
+
+
+// SCSS for the Journey Pages (e.g., Lagoon Line)
+// This file assumes your _variables.scss is imported globally.
+
+// --- 1. Journey Hero Section ---
+.journey-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-color: $ovayo-lagoon-turqoise;
+
+    // Creates the color overlay
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: $ovayo-lagoon-turqoise;
+    //     opacity: 0.6;
+    // }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: map-get($spacers, 4);
+    }
+
+    .hero-title {
+        font-family: $headings-font-family;
+        // font-size: $display-font-sizes.1; // Using your largest display font size
+        line-height: $display-line-height;
+        font-weight: $display-font-weight;
+        margin: 0;
+    }
+    
+    .price-badge {
+        background-color: rgba($white, 0.2);
+        border: $border-width solid rgba($white, 0.5);
+        border-radius: $btn-border-radius;
+        padding: $input-btn-padding-y $input-btn-padding-x;
+        text-align: left;
+
+        .price {
+            font-size: $h4-font-size;
+            font-weight: $font-weight-bold;
+            display: block;
+        }
+        .duration {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+// --- 2. Wave Divider ---
+.wave-divider {
+    display: inline-block;
+    position: absolute;
+    top: 150px; // Prevents a thin line gap between sections
+    width: 100%;
+    height: auto;
+    
+    svg {
+        // The fill is set inline to match the section below it
+        // style="fill:#{$body-bg};"
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+}
+
+// --- 3. Journey Content Section ---
+.journey-content-section {
+    // background-color: $body-bg;
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 8);
+    
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: map-get($spacers, 6);
+        
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: 1fr 1fr;
+            gap: map-get($spacers, 8);
+        }
+    }
+    
+    h3.content-title {
+        font-family: $headings-font-family;
+        color: $ovayo-sunset-coral;
+        font-size: $h3-font-size;
+        padding-left: map-get($spacers, 4);
+        margin-bottom: map-get($spacers, 4);
+    }
+
+    // .included-content {
+    //     border: 2px solid $ovayo-atoll-teal;
+    //     border-radius: $border-radius;
+    //     padding: $container-padding;
+    // }
+
+    .included-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding-left: $grid-gutter-width * 0.8;
+            margin-bottom: map-get($spacers, 3);
+            color: $ovayo-dark-text;
+
+            // Custom bullet point using the ::before pseudo-element
+            &::before {
+                content: '•';
+                position: absolute;
+                left: 0;
+                color: $ovayo-sunset-coral;
+                font-weight: $font-weight-bold;
+                font-size: 1.2em;
+                line-height: 1;
+            }
+        }
+    }
+
+    .itinerary-card {
+        background-color: rgba(182, 168, 148, 0.3);
+        border-radius: $border-radius-lg;
+        padding-top: map-get($spacers, 4);
+        padding-bottom: map-get($spacers, 4);
+        margin-bottom: map-get($spacers, 4);
+        padding-left: map-get($spacers, 4);
+        padding-right: map-get($spacers, 4);
+        box-shadow: $box-shadow;
+    }
+
+    .itinerary-item {
+        margin-bottom: map-get($spacers, 3);
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-weight: $font-weight-bold;
+            color: $ovayo-dark-text;
+            display: block;
+        }
+        p {
+            margin: 0;
+            color: $gray-600;
+        }
+    }
+
+    .cta-button {
+        @extend .btn; // Inherit base .btn styles
+        @extend .btn-lg; // Make it a large button
+        background-color: $primary; // $ovayo-lagoon-turqoise
+        border-color: $primary;
+        color: $white;
+        margin-top: map-get($spacers, 6);
+        
+        &:hover {
+            background-color: shade-color($primary, 10%);
+            border-color: shade-color($primary, 10%);
+        }
+    }
+}
+
+// SCSS for the "Mid-Range Drifter" Journey Page
+// This file assumes your _variables.scss is imported globally.
+
+// --- 1. Hero Section ---
+.drifter-hero {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    @include media-breakpoint-up(lg) {
+        min-height: 70vh;
+    }
+}
+
+// --- 2. Content Section ---
+.drifter-content-section {
+    background-color: $ovayo-light-80;
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 6);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+
+    .section-title {
+        @extend h3; // Use h3 styles from your theme
+        margin-bottom: map-get($spacers, 6);
+    }
+    
+    // --- Itinerary Grid ---
+    .itinerary-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // 2 columns on mobile
+        gap: map-get($spacers, 6) $grid-gutter-width;
+        margin-bottom: map-get($spacers, 8);
+        
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    .itinerary-item {
+        .day-label {
+            color: $headings-color;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: map-get($spacers, 4);
+        }
+        .icon {
+            color: $ovayo-sunset-coral; // Main accent color for this page
+            margin-bottom: map-get($spacers, 4);
+            svg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+        .description {
+            color: $gray-600;
+            font-size: $font-size-base;
+            line-height: 1.5;
+        }
+    }
+
+    // --- Testimonial ---
+    .testimonial-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .testimonial-quote {
+        font-family: $headings-font-family;
+        color: $headings-color;
+        font-size: $h4-font-size;
+        position: relative;
+        padding: 0 map-get($spacers, 4); // Add horizontal padding to not overlap with quotes
+        margin-bottom: map-get($spacers, 4);
+
+        // Styling for the decorative quotation marks
+        &::before, &::after {
+            font-family: serif; // A generic serif for the quote marks
+            color: $ovayo-light-80;
+            font-size: 5rem;
+            line-height: 1;
+            position: absolute;
+        }
+        &::before {
+            content: '“';
+            top: -1.5rem;
+            left: 0;
+        }
+         &::after {
+            content: '”';
+            bottom: -3.5rem;
+            right: 0;
+        }
+    }
+
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: map-get($spacers, 3);
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .author-name {
+            color: $headings-color;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+
+// SCSS for the "Ocean Crest" Journey Page
+// This file assumes your _variables.scss is imported globally.
+
+.ocean-crest-page {
+    // --- 1. Hero Section ---
+    .hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 80vh;
+        color: $white;
+        background-size: cover;
+        background-position: center;
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+
+        // Gradient overlay for better text readability
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, $ovayo-moonlit-slate 0%, rgba($ovayo-moonlit-slate, 0) 50%);
+        }
+        
+        .container {
+            position: relative;
+            z-index: 2; // Ensure content is above the overlay
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: map-get($spacers, 4);
+            align-items: center;
+            text-align: center;
+            
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: 1fr auto; // Auto width for the profile
+                text-align: left;
+            }
+        }
+        
+        .hero-title {
+            @extend .display-1; // Use display-1 styles from your theme
+            color: $ovayo-light-100;
+        }
+        
+        .btn-price {
+            @extend .btn;
+            @extend .btn-lg;
+            background-color: $ovayo-sunset-coral;
+            border-color: $ovayo-sunset-coral;
+            color: $white;
+            border-radius: 50px; // Pill shape
+
+            &:hover {
+                background-color: shade-color($ovayo-sunset-coral, 10%);
+                border-color: shade-color($ovayo-sunset-coral, 10%);
+            }
+        }
+        
+        .advisor-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: map-get($spacers, 2);
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 2px solid $white;
+            }
+            .name {
+                font-weight: $font-weight-bold;
+            }
+            .role {
+                font-size: $font-size-sm;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    // --- 2. Content Section ---
+    .content-section {
+        padding-bottom: map-get($spacers, 8);
+        position: relative;
+        // The negative margin makes this section overlap the hero
+        margin-top: -#{map-get($spacers, 8)}; 
+    }
+
+    .content-card {
+        background-color: $ovayo-light-100;
+        border-radius: $border-radius-xl;
+        padding: map-get($spacers, 6);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: map-get($spacers, 6);
+        box-shadow: $box-shadow;
+        
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: 2fr 1fr; // Itinerary takes more space
+            align-items: center;
+        }
+    }
+
+    .itinerary-content {
+        .section-title {
+            @extend h3;
+            margin-bottom: map-get($spacers, 6);
+            text-align: center;
+             @include media-breakpoint-up(lg) {
+                text-align: left;
+             }
+        }
+        .itinerary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: $grid-gutter-width;
+        }
+        .itinerary-item {
+            text-align: center;
+            .day-label {
+                font-size: $font-size-sm;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                font-weight: $font-weight-bold;
+                color: $headings-color;
+                margin-bottom: map-get($spacers, 2);
+            }
+            .icon {
+                color: $headings-color;
+                svg { width: 32px; height: 32px; }
+            }
+        }
+    }
+    
+    .video-testimonial {
+        min-height: 300px;
+        border-radius: $border-radius-lg;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: $card-spacer-y;
+        text-align: center;
+
+        .video-text {
+            color: $ovayo-light-30;
+            font-weight: $font-weight-bold;
+            box-shadow: $box-shadow-ov;
+        }
+    }
+}
+
+

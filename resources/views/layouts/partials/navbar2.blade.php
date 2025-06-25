@@ -41,6 +41,23 @@
                         <a class="nav-link active" href="{{ route('root') }}">Home</a>
                     </li>
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="journeysMenu" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Journeys</a>
+                        <ul class="dropdown-menu" aria-labelledby="journeysMenu">
+                            <li><a class="dropdown-item" href="{{ route('second', ['journey', 'lagoon-line']) }}">Lagoon Line </a></li>
+                            <li><a class="dropdown-item" href="{{ route('second', ['journey', 'midrange-drifter']) }}">Mid-Range Drifter</a></li>
+                            <li><a class="dropdown-item" href="{{ route('second', ['journey', 'ocean-crest']) }}">Ocean Crest</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ route('root') }}">Why Ovayo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ route('root') }}">Sustainability</a>
+                    </li>
+
                     <!-- Nav item Hotel -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('second', ['pages', 'hotels']) }}">Hotels</a>
@@ -55,14 +72,7 @@
                         <a class="nav-link" href="{{ route('second', ['pages', 'why-ovayo']) }}">Why Ovayo</a>
                     </li> -->
 
-                    <!-- Nav item Why Ovayo -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="whyOvayoMenu" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Why Ovayo</a>
-                        <ul class="dropdown-menu" aria-labelledby="whyOvayoMenu">
-                            <li><a class="dropdown-item" href="{{ route('second', ['pages', 'sustainability']) }}">Sustainability</a></li>
-                        </ul>
-                    </li>
+                    
 
 
                     <!-- Blog -->
